@@ -1,0 +1,150 @@
+/*
+    CSS for the portfolio
+    By Yohan
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #001626;
+}
+::-webkit-scrollbar-thumb {
+    background: #00233B;
+    border-radius: 0.15rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #002e4d;
+}
+::-moz-scrollbar {
+    width: 10px;
+}
+::-moz-scrollbar-track {
+    background: #001626;
+}
+::-moz-scrollbar-thumb {
+    background: #00233B;
+    border-radius: 0.15rem;
+}
+::-moz-scrollbar-thumb:hover {
+    background: #002e4d;
+}
+
+/* MENU */
+menu {
+    background: #00233B;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+menu ul {
+    list-style: none;
+}
+menu ul li {
+    cursor: pointer;
+    font-size: 200%;
+    margin: 10px 0;
+    transition: color 0.15s ease-in-out;
+}
+menu ul li:hover {
+    color: rgb(202, 202, 202);
+    transition: color 0.15s ease-in-out;
+}
+
+/* CONTAINER */
+#container {
+    height: 100%;
+    margin-left: 100px;
+}
+/* Profile */
+#container #profile-sect {
+    background: #001626;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#container #profile-sect #content {
+    background: #001626;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+#container #profile-sect #content div:nth-child(1) h1 {
+    font-size: 300%;
+}
+#container #profile-sect #content div:nth-child(1) h2 {
+    font-weight: normal;
+    font-size: 250%;
+}
+#container #profile-sect #content div:nth-child(1) h2:nth-child(2) span {
+    font-weight: bold;
+}
+#container #profile-sect #content div:nth-child(1) h2:nth-child(3) span {
+    font-weight: bold;
+    font-style: italic;
+}
+#container #profile-sect #content div:nth-child(1) p {
+    font-size: 200%;
+    margin-top: 50px;
+}
+#container #profile-sect #content div button {
+    cursor: pointer;
+    font-size: 150%;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background: none;
+    outline: none;
+    border: solid 5px #043657;
+    border-radius: 0.3rem;
+    margin-top: 10px;
+    transition: background 0.15s ease-in-out;
+}
+#container #profile-sect #content div button:hover {
+    background: #043657;
+    transition: background 0.15s ease-in-out;
+}
+#container #profile-sect #content div:nth-child(2) h2 {
+    font-size: 180%;
+}
+#container #profile-sect #content div:nth-child(2) p {
+    font-size: 170%;
+    font-style: italic;
+    margin-top: -5px;
+}
+#container #profile-sect #downArrow {
+    text-align: center;
+    margin-bottom: 80px;
+}
+#container #profile-sect #downArrow span {
+    cursor: pointer;
+    padding: 15px;
+    border: solid 2px #00233B;
+    border-radius: 30%;
+    transition: all 0.15s ease-in-out;
+}
+#container #profile-sect #downArrow span:hover {
+    background: #00233B;
+    transition: all 0.15s ease-in-out;
+}
