@@ -14,7 +14,7 @@
 <body>
     <!-- LEFT MENU -->
     <menu>
-        <ul>
+        <ul id="menu">
             <li onclick="moveSect('profile');" class="menuIcon"><i class="fa-solid fa-user"></i></li>
             <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
             <li class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
@@ -31,7 +31,7 @@
                 <div>
                     <h1>HEY!!!</h1>
                     <h2>My name is <span>Yohan</span></h2>
-                    <h2>I am <span>french developper</span></h2>
+                    <h2>I am <span>french developper</span><b onclick="baguette();">.</b></h2>
                     <p>
                         Based on fullstack,<br>
                         I make all types of website
@@ -53,11 +53,17 @@
         <section class="section" id="work-sect">
             <div class="card">
                 <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
+                <h2>BS - Scripts</h2>
+                <p onclick="window.open('https://bs-scripts.fr')">https://bs-scripts.fr</p>
+            </div>
+            <div class="card">
+                <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
                 <h2>Name</h2>
                 <p onclick="window.open('https://bs-scripts.fr')">https://bs-scripts.fr</p>
             </div>
         </section>
-        <section class="section" id="cherpas-sect">
+
+        <section class="section" id="contact-sect">
             <div>
                 <h1>HEY!!!</h1>
                 <h2>My name is <span>Yohan</span></h2>

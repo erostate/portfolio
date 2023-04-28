@@ -78,13 +78,15 @@ menu ul li:hover {
     height: 100%;
     margin-left: 100px;
 }
-/* Profile */
-#container #profile-sect {
+#container .section {
     background: #001626;
     color: white;
+    height: 100vh;
+}
+/* Profile */
+#container #profile-sect {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 #container #profile-sect #content {
     background: #001626;
@@ -108,6 +110,9 @@ menu ul li:hover {
 #container #profile-sect #content div:nth-child(1) h2:nth-child(3) span {
     font-weight: bold;
     font-style: italic;
+}
+#container #profile-sect #content div:nth-child(1) h2:nth-child(3) b {
+    cursor: pointer;
 }
 #container #profile-sect #content div:nth-child(1) p {
     font-size: 200%;
@@ -155,11 +160,8 @@ menu ul li:hover {
 }
 /* Work */
 #container #work-sect {
-    background: #001626;
-    color: white;
     border-top: solid 2px #00233B;
     border-bottom: solid 2px #00233B;
-    height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -194,4 +196,15 @@ menu ul li:hover {
     background: #001626;
     color: white;
     height: 100vh;
+}
+
+#container #baguette-sect {
+    display: flex;
+    flex-direction: row;
+}
+#container #baguette-sect img {
+    height: 100%;
+}
+#container #baguette-sect img:nth-child(1) {
+    margin-right: -650px;
 }
