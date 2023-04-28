@@ -67,6 +67,11 @@ menu ul li:hover {
     color: rgb(202, 202, 202);
     transition: color 0.15s ease-in-out;
 }
+.active {
+    color: rgb(128, 128, 128) !important;
+    transform: scale(120%);
+    transition: all 0.15s ease-in-out;
+}
 
 /* CONTAINER */
 #container {
@@ -147,4 +152,46 @@ menu ul li:hover {
 #container #profile-sect #downArrow span:hover {
     background: #00233B;
     transition: all 0.15s ease-in-out;
+}
+/* Work */
+#container #work-sect {
+    background: #001626;
+    color: white;
+    border-top: solid 2px #00233B;
+    border-bottom: solid 2px #00233B;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: auto;
+}
+#container #work-sect .card {
+    background: #00233B;
+    padding: 5px;
+    border-radius: 0.3rem;
+    width: 400px;
+    margin: 10px 0;
+}
+#container #work-sect .card img {
+    width: 100%;
+}
+#container #work-sect .card h2 {
+    margin-top: 5px;
+}
+#container #work-sect .card p {
+    cursor: pointer;
+    color: aqua;
+    transition: color 0.15s ease-in-out;
+}
+#container #work-sect .card p:hover {
+    color: rgb(0, 184, 184);
+    transition: color 0.15s ease-in-out;
+}
+
+#container #cherpas-sect {
+    background: #001626;
+    color: white;
+    height: 100vh;
 }

@@ -15,15 +15,18 @@
     <!-- LEFT MENU -->
     <menu>
         <ul>
-            <li><i class="fa-solid fa-user"></i></li>
-            <li><i class="fa-solid fa-briefcase"></i></li>
+            <li onclick="moveSect('profile');" class="menuIcon"><i class="fa-solid fa-user"></i></li>
+            <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
+            <li class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
+            <li class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
+            <li class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
         </ul>
     </menu>
 
     <!-- CONTAINER -->
     <div id="container">
         <!-- Profile -->
-        <section id="profile-sect">
+        <section class="section" id="profile-sect">
             <div id="content">
                 <div>
                     <h1>HEY!!!</h1>
@@ -45,7 +48,50 @@
                 <span onclick="moveSect('work')"><i class="fa-solid fa-arrow-down"></i></span>
             </div>
         </section>
-        <section id="work-sect">
+
+        <!-- Work -->
+        <section class="section" id="work-sect">
+            <div class="card">
+                <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
+                <h2>Name</h2>
+                <p onclick="window.open('https://bs-scripts.fr')">https://bs-scripts.fr</p>
+            </div>
+        </section>
+        <section class="section" id="cherpas-sect">
+            <div>
+                <h1>HEY!!!</h1>
+                <h2>My name is <span>Yohan</span></h2>
+                <h2>I am <span>french developper</span></h2>
+                <p>
+                    Based on fullstack,<br>
+                    I make all types of website
+                </p>
+                <button>See more</button>
+            </div>
+            <div>
+                <h2>Want a website?</h2>
+                <p>Check my work</p>
+                <button>Bloom's Studio</button>
+            </div>
+        </section>
+        <section class="section" id="cherpas-sect">
+            <div>
+                <h1>HEY!!!</h1>
+                <h2>My name is <span>Yohan</span></h2>
+                <h2>I am <span>french developper</span></h2>
+                <p>
+                    Based on fullstack,<br>
+                    I make all types of website
+                </p>
+                <button>See more</button>
+            </div>
+            <div>
+                <h2>Want a website?</h2>
+                <p>Check my work</p>
+                <button>Bloom's Studio</button>
+            </div>
+        </section>
+        <section class="section" id="cherpas-sect">
             <div>
                 <h1>HEY!!!</h1>
                 <h2>My name is <span>Yohan</span></h2>
