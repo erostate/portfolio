@@ -1,3 +1,36 @@
+// Savoir si un cookie portant le nom passé en paramètre existe
+function getCookie(name) {
+    if (document.cookie.length == 0)
+        return null;
+    
+    var regSepCookie = new RegExp('(; )', 'g');
+    var cookies = document.cookie.split(regSepCookie);
+
+    for (var i = 0; i < cookies.length; i++) {
+        var regInfo = new RegExp('=', 'g');
+        var infos = cookies[i].split(regInfo);
+        if (infos[0] == name) {
+            return unescape(infos[1]);
+        }
+    }
+}
+
+function iahd() {
+    document.cookie = "lang=en";
+}
+function fiuhz() {
+    console.log(getCookie('lang'));
+}
+
+function changeLang() {
+    if (getCookie('lang') != null) {
+        document.cookie = "lang=en";
+    } else {
+        document.cookie = "lang=en";
+    }
+}
+// A approfondir : faire si lang = fr alors mettre en et inversement
+
 function moveSect(sect) {
     window.location.href='#'+sect+'-sect';
 }
