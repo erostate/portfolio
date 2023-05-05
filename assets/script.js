@@ -166,6 +166,10 @@ function baguette() {
     baguImg = document.createElement('img');
     baguImg.src = "assets/img/baguette_right.png";
     baguSect.appendChild(baguImg);
+    // CREATE baguette title h1
+    baguTitle = document.createElement('h1');
+    baguTitle.innerText = "BAGUETTE";
+    baguSect.appendChild(baguTitle);
 
     // CREATE baguette menu li
     liMenuBagu = document.createElement('li');

@@ -294,6 +294,10 @@ menu ul .div-language li:nth-child(1) {
 #container #baguette-sect {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+#container #baguette-sect h1 {
+    font-size: 300%;
 }
 #container #baguette-sect img {
     height: 100%;
