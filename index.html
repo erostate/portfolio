@@ -16,11 +16,19 @@
     <menu>
         <ul id="menu">
             <li onclick="moveSect('profile');" class="menuIcon"><i class="fa-solid fa-user"></i></li>
-            <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
             <li onclick="moveSect('langu');" class="menuIcon"><i class="fa-solid fa-code"></i></li>
+            <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
             <li class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
             <li class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
-            <li class="sel-language"><img src="assets/img/flag-en.png" alt="Flag En"></li>
+            <li onclick="openLangPanel();" class="sel-language"><img src="assets/img/flag-en.png" alt="Flag En"></li>
+            <div id="divLanguage">
+                <!--
+                <ul id="ulLanguage">
+                    <li><img src="assets/img/flag-en.png" alt="Flag En"></li>
+                    <li><img src="assets/img/flag-fr.png" alt="Flag Fr"></li>
+                </ul>
+                -->
+            </div>
         </ul>
     </menu>
 
@@ -49,28 +57,6 @@
                 <span onclick="moveSect('work')"><i class="fa-solid fa-arrow-down"></i></span>
             </div>
         </section>
-
-        <!-- Work -->
-        <section class="section" id="work-sect">
-            <h2>My work</h2>
-            <div class="contain">
-                <div class="card">
-                    <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
-                    <h2>BS - Scripts</h2>
-                    <p onclick="window.open('https://bs-scripts.fr')">https://bs-scripts.fr</p>
-                </div>
-                <div class="card">
-                    <img src="assets/img/work/bs-scripts.png" alt="BS - FM">
-                    <h2>BS FM</h2>
-                    <p onclick="window.open('https://bs-fm.fr')">https://bs-fm.fr</p>
-                </div>
-                <div class="card">
-                    <img src="assets/img/work/bs-scripts.png" alt="BLMS Music">
-                    <h2>BLMS Music</h2>
-                    <p onclick="window.open('https://blms.fr')">https://blms.fr</p>
-                </div>
-            </div>
-        </section>
         
         <!-- Langage -->
         <section class="section" id="langu-sect">
@@ -96,6 +82,28 @@
                 <div class="card">
                     <img src="assets/img/cLanguage/csharp.png">
                     <!-- <h2>HTML 5</h2> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section class="section" id="work-sect">
+            <h2>My work</h2>
+            <div class="contain">
+                <div class="card">
+                    <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
+                    <h2>BS - Scripts</h2>
+                    <p onclick="window.open('https://bs-scripts.fr')">https://bs-scripts.fr</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/work/bs-scripts.png" alt="BS - FM">
+                    <h2>BS FM</h2>
+                    <p onclick="window.open('https://bs-fm.fr')">https://bs-fm.fr</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/work/bs-scripts.png" alt="BLMS Music">
+                    <h2>BLMS Music</h2>
+                    <p onclick="window.open('https://blms.fr')">https://blms.fr</p>
                 </div>
             </div>
         </section>

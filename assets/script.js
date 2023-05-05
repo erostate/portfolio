@@ -15,22 +15,46 @@ function getCookie(name) {
     }
 }
 
-function iahd() {
-    document.cookie = "lang=en";
-}
-function fiuhz() {
-    console.log(getCookie('lang'));
+// Ouvrir le menu de changement de langue
+function openLangPanel() {
+    if (document.getElementById('ulLanguage')) {
+        console.log('yeet')
+    } else {
+        divL = document.getElementById('divLanguage');
+
+        divL.classList.add('div-language');
+
+        ulL = document.createElement('ul');
+        ulL.id = 'ulLanguage';
+        divL.appendChild(ulL);
+
+        liEnL = document.createElement('li');
+        liFrL = document.createElement('li');
+        ulL.appendChild(liEnL);
+        ulL.appendChild(liFrL);
+
+        imgEnL = document.createElement('img');
+        imgFrL = document.createElement('img');
+        imgEnL.src = 'assets/img/flag-en.png';
+        imgFrL.src = 'assets/img/flag-fr.png';
+        imgEnL.alt = 'FLag En';
+        imgFrL.alt = 'FLag Fr';
+        liEnL.appendChild(imgEnL);
+        liFrL.appendChild(imgFrL);
+    }
 }
 
+// Changer la langue
 function changeLang() {
-    if (getCookie('lang') != null) {
-        document.cookie = "lang=en";
-    } else {
+    if (getCookie('lang') == 'en') {
+        document.cookie = "lang=fr";
+    } else if (getCookie('lang') == 'fr') {
         document.cookie = "lang=en";
     }
 }
-// A approfondir : faire si lang = fr alors mettre en et inversement
+// changeLang()
 
+// Bouton pour changer de secion
 function moveSect(sect) {
     window.location.href='#'+sect+'-sect';
 }
