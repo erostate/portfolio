@@ -18,10 +18,10 @@ function getCookie(name) {
 // Ouvrir le menu de changement de langue
 function openLangPanel() {
     if (document.getElementById('ulLanguage')) {
-        console.log('yeet')
+        document.getElementById('ulLanguage').remove();
+        document.getElementById('divLanguage').classList.remove('div-language');
     } else {
         divL = document.getElementById('divLanguage');
-
         divL.classList.add('div-language');
 
         ulL = document.createElement('ul');
@@ -52,7 +52,6 @@ function changeLang() {
         document.cookie = "lang=en";
     }
 }
-// changeLang()
 
 // Bouton pour changer de secion
 function moveSect(sect) {
@@ -60,7 +59,23 @@ function moveSect(sect) {
 }
 
 
+// Event Listener sur le Document
+document.addEventListener('click', function(e) {
+    if (document.getElementById('ulLanguage')) {
+        if (!document.getElementById('noot').contains(e.target)) {
+            document.getElementById('ulLanguage').remove();
+            document.getElementById('divLanguage').classList.remove('div-language');
+        }
+    }
+})
+// Event Listener Chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
+    if (getCookie('lang') == 'fr') {
+        document.cookie = "lang=fr";
+    } else if (getCookie('lang') == 'fr') {
+        document.cookie = "lang=en";
+    }
+
     const sections = document.querySelectorAll('.section');
 
     const firstIcon = document.querySelector(`.menuIcon:nth-of-type(1)`);
