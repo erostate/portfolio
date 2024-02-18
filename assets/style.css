@@ -1,0 +1,508 @@
+/*
+    CSS for the portfolio
+    By Yohan
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #001626;
+}
+::-webkit-scrollbar-thumb {
+    background: #00233B;
+    border-radius: 0.15rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #002e4d;
+}
+::-moz-scrollbar {
+    width: 10px;
+}
+::-moz-scrollbar-track {
+    background: #001626;
+}
+::-moz-scrollbar-thumb {
+    background: #00233B;
+    border-radius: 0.15rem;
+}
+::-moz-scrollbar-thumb:hover {
+    background: #002e4d;
+}
+
+/* MENU */
+menu {
+    background: #00233B;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+menu ul li {
+    cursor: pointer;
+    font-size: 200%;
+    margin: 10px 0;
+    transition: color 0.15s ease-in-out;
+}
+menu ul li:hover {
+    color: rgb(202, 202, 202);
+    transition: color 0.15s ease-in-out;
+}
+.active {
+    color: rgb(43, 83, 136) !important;
+    transition: all 0.15s ease-in-out;
+}
+
+menu ul .sel-language {
+    position: fixed;
+    bottom: 0;
+}
+menu ul .div-language {
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+    background: rgba(0, 35, 59, 0.9);
+    padding: 10px 20px;
+    z-index: 100;
+}
+menu ul .div-language li:nth-child(1) {
+    margin-bottom: -20px;
+}
+menu ul li img {
+    width: 40px;
+}
+
+/* CONTAINER */
+#container {
+    height: 100%;
+    margin-left: 100px;
+}
+#container .section {
+    background: #001626;
+    color: white;
+    height: 100vh;
+}
+/* Profile */
+#container #profile-sect {
+    display: flex;
+    flex-direction: column;
+}
+#container #profile-sect #content {
+    background: #001626;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+#container #profile-sect #content div:nth-child(1) h1 {
+    font-size: 300%;
+}
+#container #profile-sect #content div:nth-child(1) h2 {
+    font-weight: normal;
+    font-size: 250%;
+}
+#container #profile-sect #content div:nth-child(1) h2:nth-child(2) span {
+    font-weight: bold;
+}
+#container #profile-sect #content div:nth-child(1) h2:nth-child(3) span {
+    font-weight: bold;
+    font-style: italic;
+}
+#container #profile-sect #content div:nth-child(1) h2:nth-child(3) b {
+    cursor: pointer;
+}
+#container #profile-sect #content div:nth-child(1) p {
+    font-size: 200%;
+    margin-top: 50px;
+}
+#container #profile-sect #content div button {
+    cursor: pointer;
+    font-size: 150%;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background: none;
+    outline: none;
+    border: solid 5px #043657;
+    border-radius: 0.3rem;
+    margin-top: 10px;
+    transition: background 0.15s ease-in-out;
+}
+#container #profile-sect #content div button:hover {
+    background: #043657;
+    transition: background 0.15s ease-in-out;
+}
+#container #profile-sect #content div:nth-child(2) h2 {
+    font-size: 180%;
+}
+#container #profile-sect #content div:nth-child(2) p {
+    font-size: 170%;
+    font-style: italic;
+    margin-top: -5px;
+}
+#container #profile-sect #downArrow {
+    text-align: center;
+    margin-bottom: 80px;
+}
+#container #profile-sect #downArrow span {
+    cursor: pointer;
+    padding: 15px;
+    border: solid 2px #00233B;
+    border-radius: 30%;
+    animation-name: goDownBtn;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: all 0.15s ease-in-out;
+}
+#container #profile-sect #downArrow span:hover {
+    background: #00233B;
+    transition: all 0.15s ease-in-out;
+}
+@keyframes goDownBtn {
+    20% {
+        border: solid 2px orange;
+    }
+    40% {
+        border: solid 2px yellow;
+    }
+    60% {
+        border: solid 2px green;
+    }
+    80% {
+        border: solid 2px magenta;
+    }
+    100% {
+        border: solid 2px #00233B;
+    }
+}
+/* Work */
+#container #work-sect {
+    border-top: solid 2px #00233B;
+    border-bottom: solid 2px #00233B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container #work-sect h2 {
+    margin-bottom: 50px;
+}
+#container #work-sect .contain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+#container #work-sect .contain .card {
+    background: #00233B;
+    padding: 5px;
+    border-radius: 0.3rem;
+    width: 400px;
+    margin: 10px;
+}
+#container #work-sect .contain .card img {
+    width: 100%;
+}
+#container #work-sect .contain .card h2 {
+    margin: 5px 0;
+}
+#container #work-sect .contain .card p {
+    cursor: pointer;
+    color: aqua;
+    transition: color 0.15s ease-in-out;
+}
+#container #work-sect .contain .card p:hover {
+    color: rgb(0, 184, 184);
+    transition: color 0.15s ease-in-out;
+}
+/* Language */
+#container #langu-sect {
+    border-top: solid 2px #00233B;
+    border-bottom: solid 2px #00233B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container #langu-sect p {
+    margin-bottom: 50px;
+    font-style: italic;
+}
+#container #langu-sect .contain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#container #langu-sect .contain .card {
+    border-radius: 0.3rem;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container #langu-sect .contain .card img {
+    width: 180px;
+}
+#container #langu-sect .contain .card .yeet {
+    font-size: 100px;
+}
+#container #langu-sect .contain .card h2 {
+    margin: 5px 0;
+}
+#container #langu-sect .contain .card p {
+    cursor: pointer;
+    color: aqua;
+    transition: color 0.15s ease-in-out;
+}
+#container #langu-sect .contain .card p:hover {
+    color: rgb(0, 184, 184);
+    transition: color 0.15s ease-in-out;
+}
+/* Exp Section */
+#container #exp-sect {
+    border-top: solid 2px #00233B;
+    border-bottom: solid 2px #00233B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container #exp-sect h2 {
+    margin-bottom: 50px;
+}
+#container #exp-sect .contain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+#container #exp-sect .contain .card {
+    background: #00233B;
+    padding: 5px;
+    border-radius: 0.3rem;
+    width: 400px;
+    margin: 10px;
+    cursor: pointer;
+    border: solid 2px #00233B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+}
+#container #exp-sect .contain .card:hover {
+    background: #001a2b;
+    border: solid 2px #00233B;
+    transition: all 0.15s ease-in-out;
+}
+#container #exp-sect .contain .card img {
+    width: 80%;
+}
+#container #exp-sect .contain .card h2 {
+    margin: 10px 0 5px 0;
+    align-self: flex-start;
+}
+#container #exp-sect .contain .card p {
+    color: rgb(0, 141, 141);
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+
+#container #cherpas-sect {
+    background: #001626;
+    color: white;
+    height: 100vh;
+}
+
+#container #baguette-sect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#container #baguette-sect h1 {
+    font-size: 300%;
+}
+#container #baguette-sect img {
+    height: 100%;
+}
+#container #baguette-sect img:nth-child(1) {
+    margin-right: -650px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    position: fixed;
+    top: 20px;
+    left: 120px;
+    background: #00233B;
+    color: white;
+    width: calc(100vw - 150px);
+    height: calc(100vh - 50px);
+    border-radius: 0.5rem;
+    padding: 10px;
+}
+.invite-to-close-modal {
+    position: fixed;
+    top: 140px;
+    left: -82px;
+    rotate: -90deg;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.css-slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background: #120103; */
+    color: #fff;
+    text-align: center;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+}
+.slide {
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 4em 0px;
+    /* background-color: #120103; */
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: left 0s .75s;
+}
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    background-color: #00233B;
+    transition: left .65s ease-out;
+}
+.kartoshka {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+}
+.kartoshka label {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 20px 10px;
+}
+nav {
+    position: absolute;
+    top: 50px;
+    margin-top: -42px;
+    z-index: 900;
+    width: 100%;
+}
+nav label {
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+    width: 100px;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+}
+nav:hover label {
+    background-color: rgba(0, 0, 0, 0.30);
+    transition: all 0.15s ease-in-out;
+}
+.kartoshka label:hover { background: #2e353b; }
+.prev {
+    position: absolute;
+    left: 10px;
+}
+.next {
+    position: absolute;
+    right: 10px;
+}
+.slide .prev, .slide .next { opacity: 0; }
+[id^="slide"]:checked + .slide .prev, [id^="slide"]:checked + .slide .next {
+    opacity: 1;
+    transition: all .5s .5s;
+}
+.slide h1 {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform .5s .5s, opacity .5s;
+}
+[id^="slide"]:checked + .slide h1,
+[id^="slide"]:checked + .slide p,
+[id^="slide"]:checked + .slide img {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+}
+.slide-one img {
+    margin-top: 60px;
+}
+.slide-one hr {
+    margin: 50px 130px;
+    border: solid 2px rgba(255, 255, 255, 0.1);
+}
+.slide-one p {
+    font-size: 150%;
+    margin: 0 150px;
+}
+.slide-one h1 {
+    font-size: 150%;
+}

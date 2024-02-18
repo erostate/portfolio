@@ -1,0 +1,46 @@
+{
+    "myNameIs": {
+        "fr": "Je m'appel <span>Yohan</span>",
+        "en": "My name is <span>Yohan</span>"
+    },
+    "iMaFrenchDev": {
+        "fr": "je suis un <span>developpeur français</span><b onclick='baguette();'>.</b>",
+        "en": "I am a <span>french developper</span><b onclick='baguette();'>.</b>"
+    },
+    "basedOnFullStack": {
+        "fr": "Basé en fullstack,<br>je réalise tout type de site internet",
+        "en": "Based on fullstack,<br>I make all types of website"
+    },
+    "btnSeeMore": {
+        "fr": "Voir plus",
+        "en": "See more"
+    },
+    "wantAWebSite": {
+        "fr": "Envie d'avoir un site ?",
+        "en": "Want a website?"
+    },
+    "checkMyWork": {
+        "fr": "Voir mes réalisations",
+        "en": "Check my work"
+    },
+    "titleMyLanguage": {
+        "fr": "",
+        "en": "My language"
+    },
+    "constantlyLearning": {
+        "fr": "",
+        "en": "Website or Desktop application. I'm constantly learning to improve my knowledge"
+    },
+    "titleMyWorks": {
+        "fr": "",
+        "en": "My works"
+    },
+    "titleMyExperience": {
+        "fr": "",
+        "en": "My experience"
+    },
+    "myExp_MaSauvegarde_date": {
+        "fr": "",
+        "en": ""
+    }
+}

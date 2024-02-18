@@ -1,0 +1,237 @@
+// Savoir si un cookie portant le nom passé en paramètre existe
+function getCookie(name) {
+    if (document.cookie.length == 0)
+        return null;
+    
+    var regSepCookie = new RegExp('(; )', 'g');
+    var cookies = document.cookie.split(regSepCookie);
+
+    for (var i = 0; i < cookies.length; i++) {
+        var regInfo = new RegExp('=', 'g');
+        var infos = cookies[i].split(regInfo);
+        if (infos[0] == name) {
+            return unescape(infos[1]);
+        }
+    }
+}
+
+// Ouvrir le menu de changement de langue
+function openLangPanel() {
+    if (document.getElementById('ulLanguage')) {
+        document.getElementById('ulLanguage').remove();
+        document.getElementById('divLanguage').classList.remove('div-language');
+    } else {
+        divL = document.getElementById('divLanguage');
+        divL.classList.add('div-language');
+
+        ulL = document.createElement('ul');
+        ulL.id = 'ulLanguage';
+        divL.appendChild(ulL);
+
+        // Create "li"
+        liEnL = document.createElement('li');
+        liFrL = document.createElement('li');
+        ulL.appendChild(liEnL);
+        ulL.appendChild(liFrL);
+
+        // Create "img"
+        imgEnL = document.createElement('img');
+        imgFrL = document.createElement('img');
+        imgEnL.src = 'https://asset.blms.fr/picture/flag/en.png';
+        imgFrL.src = 'https://asset.blms.fr/picture/flag/fr.png';
+        imgEnL.alt = 'FLag En';
+        imgFrL.alt = 'FLag Fr';
+        imgEnL.classList.add('flag-change-lang');
+        imgFrL.classList.add('flag-change-lang');
+        imgEnL.onclick = function() { changeLang('en'); };
+        imgFrL.onclick = function() { changeLang('fr'); };
+        liEnL.appendChild(imgEnL);
+        liFrL.appendChild(imgFrL);
+    }
+}
+
+// Changer la langue
+function changeLang(lang) {
+    const existingLang = ['en', 'fr'];
+    if (!existingLang.includes(lang)) {
+        lang = 'en';
+    }
+    document.cookie = "lang="+lang;
+
+    const currentLanguage = document.getElementById('currentLanguage');
+    if (lang == 'fr') {
+        currentLanguage.src = 'https://asset.blms.fr/picture/flag/fr.png';
+        currentLanguage.alt = 'Flag Fr';
+    } else if (lang == 'en') {
+        currentLanguage.src = 'https://asset.blms.fr/picture/flag/en.png';
+        currentLanguage.alt = 'Flag En';
+    }
+
+    document.getElementById('currentLanguageInp').value = lang;
+}
+
+// Récupérer la langue actuelle dans le cookie au lancement de la page
+// if (getCookie('lang') == 'fr') {
+//     changeLang('fr');
+// } else if (getCookie('lang') == 'en') {
+//     changeLang('en');
+// }
+
+// Bouton pour changer de section
+function moveSect(sect) {
+    window.location.href='#'+sect+'-sect';
+}
+
+// Event Listener sur le Document
+document.addEventListener('click', function(e) {
+    if (document.getElementById('ulLanguage')) {
+        if (!document.getElementById('noot').contains(e.target)) {
+            document.getElementById('ulLanguage').remove();
+            document.getElementById('divLanguage').classList.remove('div-language');
+        }
+    }
+})
+// Event Listener Chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    if (getCookie('lang') == 'fr') {
+        document.cookie = "lang=fr";
+    } else if (getCookie('lang') == 'en') {
+        document.cookie = "lang=en";
+    }
+
+    const sections = document.querySelectorAll('.section');
+
+    const firstIcon = document.querySelector(`.menuIcon:nth-of-type(1)`);
+    firstIcon.classList.add('active');
+
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        
+        sections.forEach((section, index) => {
+            const sectionPosition = section.offsetTop - 50;
+
+            if (scrollPosition >= sectionPosition) {
+                const icon = document.querySelector(`.menuIcon:nth-of-type(${index + 1})`);
+
+                icon.classList.add('active');
+
+                const otherIcons = document.querySelectorAll('.menuIcon:not(:nth-of-type(' + (index + 1) + '))');
+                otherIcons.forEach((otherIcon) => {
+                    otherIcon.classList.remove('active');
+                });
+            }
+        });
+    });
+});
+
+function openModal(modalName, type) {
+    document.getElementById(modalName).style.display = type;
+}
+// Close the modal
+function closeModal(modalName) {
+    document.getElementById(modalName).style.display = 'none';
+}
+// Close the modal when clicking outside
+window.onclick = function(event) {
+    if (event.target.className == 'modal') {
+        event.target.style.display = 'none';
+    }
+}
+
+
+// EASTER EGG
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+function yeetQuaso() {
+    const nbQuaso = 24;
+    const containerQuaso = document.getElementById('containerQuaso');
+    for (let i = 1; i <= nbQuaso; i++) {
+        quaso = document.createElement('img');
+        if (getRandomInt(0, 10) <= 5) {
+            quaso.src = "assets/img/quaso.png";
+        } else {
+            quaso.src = "assets/img/chocolatine.png";
+        }
+        quaso.id = "quaso-"+i;
+        quaso.style.marginTop = "-300px";
+        quaso.style.width = "300px";
+        quaso.style.position = "absolute";
+        quaso.style.userSelect = "none";
+        containerQuaso.appendChild(quaso);
+    }
+
+    var leftSpacing = -300;
+    for (let i = 1; i <= nbQuaso; i++) {
+        setTimeout(function() {
+            if (leftSpacing == 1800) {
+                leftSpacing = 0;
+            } else {
+                leftSpacing = leftSpacing + 300;
+            }
+            quasoName = 'quaso-'+i;
+            quaso = document.getElementById(quasoName);
+            quaso.style.transition = 'margin-top '+getRandomArbitrary(0.50, 3)+'s ease-in-out, transform '+getRandomArbitrary(2, 4)+'s ease-in-out';
+            quaso.style.marginTop = '1000px';
+            quaso.style.marginLeft = leftSpacing+'px';
+            quaso.style.transform = 'rotate('+getRandomArbitrary(-360, 360)+'deg)';
+        }, 500);
+    }
+
+    setTimeout(function() {
+        containerQuaso.innerHTML = "";
+        // yeetQuaso();
+    }, 3000);
+}
+// EASTER EGG 2
+function baguette() {
+    // CONTAINER
+    const container = document.getElementById('container');
+    // MENU
+    const menu = document.getElementById('menu');
+
+    // CREATE baguette section
+    baguSect = document.createElement('section');
+    baguSect.id = 'baguette-sect';
+    baguSect.classList.add('section');
+    container.appendChild(baguSect);
+    // CREATE baguette image
+    baguImg = document.createElement('img');
+    baguImg.src = "assets/img/baguette_left.png";
+    baguSect.appendChild(baguImg);
+    // CREATE baguette image
+    baguImg = document.createElement('img');
+    baguImg.src = "assets/img/baguette_right.png";
+    baguSect.appendChild(baguImg);
+    // CREATE cat image
+    baguImg = document.createElement('img');
+    baguImg.src = "https://report.blms.fr/assets/img/ee/cat7.png";
+    baguSect.appendChild(baguImg);
+
+    // CREATE baguette menu li
+    liMenuBagu = document.createElement('li');
+    liMenuBagu.id = 'baguette-menu';
+    liMenuBagu.classList.add('menuIcon');
+    liMenuBagu.onclick = function() { window.location.href='#baguette-sect'; };
+    menu.appendChild(liMenuBagu);
+    // CREATE baguette menu i
+    iMenuBagu = document.createElement('i');
+    iMenuBagu.classList.add('fa-solid');
+    iMenuBagu.classList.add('fa-bread-slice');
+    liMenuBagu.appendChild(iMenuBagu);
+
+    // REDIRECTION
+    window.location.href='#baguette-sect';
+
+    // RETRAIT de la page après 5 secondes
+    setTimeout(() => {
+        document.getElementById('baguette-sect').remove();
+        document.getElementById('baguette-menu').remove();
+        window.location.href='#profile-sect';
+    }, 5000);
+}

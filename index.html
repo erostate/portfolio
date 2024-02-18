@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Yohan</title>
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1224050b85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="containerQuaso"></div>
+
+    <!-- LEFT MENU -->
+    <menu id="left-menu">
+        <ul id="menu">
+            <li onclick="moveSect('profile');" class="menuIcon"><i class="fa-solid fa-user"></i></li>
+            <li onclick="moveSect('langu');" class="menuIcon"><i class="fa-solid fa-code"></i></li>
+            <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
+            <li onclick="moveSect('exp');" class="menuIcon"><i class="fa-solid fa-flask"></i></li>
+            <li class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
+            <li onclick="openLangPanel();" id="noot" class="sel-language">
+                <img id="currentLanguage" src="https://asset.blms.fr/picture/flag/en.png" alt="Flag En">
+                <input type="hidden" id="currentLanguageInp" value="en">
+            </li>
+            <div id="divLanguage">
+                <!--
+                <ul id="ulLanguage">
+                    <li><img src="assets/img/flag-en.png" alt="Flag En"></li>
+                    <li><img src="assets/img/flag-fr.png" alt="Flag Fr"></li>
+                </ul>
+                -->
+            </div>
+        </ul>
+    </menu>
+
+    <!-- CONTAINER -->
+    <div id="container">
+        <!-- Profile -->
+        <section class="section" id="profile-sect">
+            <div id="content">
+                <div>
+                    <h1 onclick="yeetQuaso();" title="Click me ;)">HEY!!!</h1>
+                    <h2 data-lang="lang.myNameIs">My name is <span>Yohan</span></h2>
+                    <h2 data-lang="lang.iMaFrenchDev">I am a <span>french developper</span><b onclick="baguette();">.</b></h2>
+                    <p data-lang="lang.basedOnFullStack">
+                        Based on fullstack,<br>
+                        I make all types of website
+                    </p>
+                    <button data-lang="lang.btnSeeMore" onclick="iahd()">See more</button>
+                </div>
+                <div>
+                    <h2 data-lang="lang.wantAWebSite">Want a website?</h2>
+                    <p data-lang="lang.checkMyWork">Check my work</p>
+                    <button onclick="fiuhz()">Bloom's Studio</button>
+                </div>
+            </div>
+            <div id="downArrow">
+                <span onclick="moveSect('langu')"><i class="fa-solid fa-arrow-down"></i></span>
+            </div>
+        </section>
+        
+        <!-- Langage -->
+        <section class="section" id="langu-sect">
+            <h2 data-lang="lang.titleMyLanguage">My language</h2>
+            <p data-lang="lang.constantlyLearning">Website or Desktop application. I'm constantly learning to improve my knowledge</p>
+            <div class="contain">
+                <div class="card">
+                    <i class="yeet fa-brands fa-html5"></i>
+                    <h2>HTML 5</h2>
+                </div>
+                <div class="card">
+                    <i class="yeet fa-brands fa-css3-alt"></i>
+                    <h2>CSS 3</h2>
+                </div>
+                <div class="card">
+                    <i class="yeet fa-brands fa-square-js"></i>
+                    <h2>JS</h2>
+                </div>
+                <div class="card">
+                    <i class="yeet fa-brands fa-php"></i>
+                    <h2>PHP</h2>
+                </div>
+                <div class="card">
+                    <img src="assets/img/cLanguage/csharp.png">
+                    <!-- <h2>C#</h2> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section class="section" id="work-sect">
+            <h2 data-lang="lang.titleMyWorks">My works</h2>
+            <div class="contain">
+                <div class="card">
+                    <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
+                    <h2>BS - Scripts</h2>
+                    <p onclick="window.open('https://bs-scripts.fr')">https://bs-scripts.fr</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/work/bs-fm.png" alt="BS - FM">
+                    <h2>BS FM</h2>
+                    <p onclick="window.open('https://project.blms.fr/exper/bs-fm/')">https://project.blms.fr/exper/bs-fm/</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/work/blms-music.png" alt="BLMS Music">
+                    <h2>BLMS Music</h2>
+                    <p><i>Under developpment</i></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="exp-sect">
+            <h2 data-lang="lang.titleMyExperience">My experiences</h2>
+            <div class="contain">
+                <div class="card" onclick="openModal('ma-sauvegarde-modal', 'block');">
+                    <img src="https://ma-sauvegarde.com/wp-content/uploads/2022/02/logo_horizontal_new.png" alt="Ma - Sauvegarde">
+                    <h2 data-lang="lang.myExp_MaSauvegarde_date">May 2023 - August 2023</h2>
+                    <p>Intership + CDD</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact-sect">
+            <div>
+                <h1>HEY!!!</h1>
+                <h2>My name is <span>Yohan</span></h2>
+                <h2>I am a <span>french developper</span></h2>
+                <p>
+                    Based on fullstack,<br>
+                    I make all types of website
+                </p>
+                <button>See more</button>
+            </div>
+            <div>
+                <h2>Want a website?</h2>
+                <p>Check my work</p>
+                <button>Bloom's Studio</button>
+            </div>
+        </section>
+
+        <!-- Experience MODAL -->
+        <div id="ma-sauvegarde-modal" class="modal" style="display: none;">
+            <p class="invite-to-close-modal">Click here to close modal</p>
+            <section class="modal-content">
+                <div class="css-slider">
+                    <input id="slide-1" type="radio" name="slides" checked style="display: none;">
+                    <section class="slide slide-one">
+                        <img src="assets/img/work/ma-sauvegarde.png" alt="" style="background-color: white; border-radius: 0.3rem;">
+                        <p>Solution de sauvegarde externalisée</p>
+                        <hr style="margin: 10px 45%;">
+                        <p style="font-style: italic;">Sérézin-du-Rhône, 69</p>
+                        <hr>
+                        <p style="text-align: left;">
+                            Editeur de solutions de sauvegarde externalisée s'adressant aux <b>éditeurs de logiciel</b>, <b>prestataires informatique</b>, ou <b>services informatique interne</b>.<br>
+                            Certifié <b>ISO 27001</b> et <b>HDS</b>.
+                        </p>
+                        <br><br>
+                        <p style="text-align: left;">
+                            <b>Période de stage :</b> 09 Mai 2023 - 30 Juin 2023<br>
+                            <b>Période de CDD :</b> 04 Juillet 2023 - 25 Août 2023
+                        </p>
+                        <nav>
+                            <!-- <label for="slide-3" class="prev">&#10094;</label> -->
+                            <label for="slide-2" class="next">&#10095;</label>
+                        </nav>
+                    </section>
+                    
+                    <input id="slide-2" type="radio" name="slides" style="display: none;">
+                    <section class="slide slide-two">
+                        <h1 style="font-size: 150%;">L'entreprise</h1>
+                        <img style="margin-top: 20px; border-radius: 0.5rem;" src="assets/img/work/timeline-MS.png" alt="Timeline Ma-Sauvegarde">
+                        <nav>
+                            <label for="slide-1" class="prev">&#10094;</label>
+                            <label for="slide-3" class="next">&#10095;</label>
+                        </nav>
+                    </section>
+                    
+                    <input id="slide-3" type="radio" name="slides" style="display: none;">
+                    <section class="slide slide-three">
+                        <h1 style="font-size: 160%;">Mes tâches</h1>
+                        <h2>Documentation Lina</h2>
+                        <div style="margin-top: 50px; display: flex; justify-content: space-between; flex-direction: row; padding: 0 120px;">
+                            <img src="assets/img/work/logo_lina.jpg" style="width: 20%; height: 20%;" alt="Logo Symfony">
+                            <img src="assets/img/work/dash_lina.webp" style="width: 800px;" alt="">
+                        </div>
+                        <nav>
+                            <label for="slide-2" class="prev">&#10094;</label>
+                            <label for="slide-4" class="next">&#10095;</label>
+                        </nav>
+                    </section>
+                    
+                    <input id="slide-4" type="radio" name="slides" style="display: none;">
+                    <section class="slide slide-four">
+                        <h1 style="font-size: 160%;">Mes tâches</h1>
+                        <h2>API Symfony</h2>
+                        <div style="margin-top: 50px; display: flex; justify-content: space-between; flex-direction: row; padding: 0 120px;">
+                            <img src="assets/img/work/logo_symfony.png" style="width: 30%; height: 30%;" alt="Logo Symfony">
+                            <img src="assets/img/work/extranet_banner.webp" style="width: 800px;" alt="">
+                        </div>
+                        <nav>
+                            <label for="slide-3" class="prev">&#10094;</label>
+                            <!-- <label for="slide-1" class="next">&#10095;</label> -->
+                        </nav>
+                    </section>
+                    
+                    <div class="kartoshka">
+                        <label for="slide-1" id="slide-1"></label>
+                        <label for="slide-2" id="slide-2"></label>
+                        <label for="slide-3" id="slide-3"></label>
+                        <label for="slide-4" id="slide-4"></label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<!-- JS Global -->
+<script src="assets/script.js"></script>
+
+<!-- Language -->
+<!-- <script type="module" src="assets/language/lang.control.js"></script> -->
+<script type="module" src="assets/language/lang.control.js"></script>
+</html>
+
+<script>
+    let interval = 2000;
+</script>
