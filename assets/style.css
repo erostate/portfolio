@@ -342,10 +342,99 @@ menu ul li img {
 }
 
 
-#container #cherpas-sect {
-    background: #001626;
+#container #contact-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container #contact-sect .container {
+    background: #00233B;
+    width: 80%;
+    border-radius: 0.4rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media screen and (min-width: 900px) {
+    #container #contact-sect .container {
+        width: 700px;
+    }
+}
+#container #contact-sect .container .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#container #contact-sect .container hr {
+    border: solid 2px #013255;
+}
+#container #contact-sect .container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#container #contact-sect .container .content textarea {
+    resize: vertical;
+}
+#container #contact-sect .container .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+#container #contact-sect .container .footer #errorLogin {
+    font-style: italic;
+    color: #f44336;
+}
+input,
+textarea,
+select {
+    background: #00243e;
     color: white;
-    height: 100vh;
+    border: solid 3px #001626;
+    outline: none;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    transition: all 0.15s ease-in-out;
+}
+input::placeholder,
+textarea::placeholder {
+    color: rgb(197, 255, 250);
+}
+input:focus,
+textarea:focus {
+    background: #001524;
+    border-bottom: solid 3px rgb(197, 255, 250);
+    transition: all 0.15s ease-in-out;
+}
+input:disabled,
+textarea:disabled {
+    background: #001524;
+    border-bottom: solid 3px rgb(49, 141, 95);
+    border-left: solid 3px rgb(49, 141, 95);
+    transition: all 0.15s ease-in-out;
+    cursor: not-allowed;
+}
+button {
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #013255;
+    border-radius: 0.3rem;
+    padding: 5px 10px;
+    background: #00243e;
+    color: white;
+    font-size: 130%;
+    transition: all 0.25s ease-in-out;
+}
+button:hover {
+    background: #001524;
+    transition: all 0.25s ease-in-out;
 }
 
 #container #baguette-sect {

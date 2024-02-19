@@ -70,13 +70,6 @@ function changeLang(lang) {
     document.getElementById('currentLanguageInp').value = lang;
 }
 
-// Récupérer la langue actuelle dans le cookie au lancement de la page
-// if (getCookie('lang') == 'fr') {
-//     changeLang('fr');
-// } else if (getCookie('lang') == 'en') {
-//     changeLang('en');
-// }
-
 // Bouton pour changer de section
 function moveSect(sect) {
     window.location.href='#'+sect+'-sect';
@@ -136,6 +129,76 @@ window.onclick = function(event) {
     if (event.target.className == 'modal') {
         event.target.style.display = 'none';
     }
+}
+
+// Check if the data in the input is an email
+function checkIfEmail(event) {
+    const email = event.target.value;
+    if (email.includes('@') && email.includes('.')) {
+        document.getElementById('errorLogin').innerHTML = "";
+        document.getElementById('btnSendContact').disabled = false;
+    } else {
+        document.getElementById('errorLogin').innerHTML = "Invalid email address";
+        if (email == "") {
+            document.getElementById('errorLogin').innerHTML = "";
+            return;
+        }
+        document.getElementById('btnSendContact').disabled = true;
+    }
+}
+document.getElementById("email").addEventListener("keyup", checkIfEmail);
+
+// Check if the data in the input is not empty
+function checkIfContactFormNotEmpty() {
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    if (email != "" && subject != "" && message != "") {
+        document.getElementById('btnSendContact').disabled = false;
+        checkIfEmail({target: {value: email}});
+    } else {
+        document.getElementById('btnSendContact').disabled = true;
+        checkIfEmail({target: {value: email}});
+    }
+}
+document.getElementById("subject").addEventListener("keyup", checkIfContactFormNotEmpty);
+document.getElementById("message").addEventListener("keyup", checkIfContactFormNotEmpty);
+
+// Send the contact form
+function performSendContact() {
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    if (email == "" || subject == "" || message == "") {
+        document.getElementById('errorLogin').innerHTML = "Missing parameters";
+        return;
+    }
+
+    const data = {
+        email: email,
+        subject: subject,
+        message: message
+    };
+
+    fetch('https://report.blms.fr/api/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }).then(response => {
+        if (response.ok) {
+            document.getElementById('email').value = "";
+            document.getElementById('subject').value = "";
+            document.getElementById('message').value = "";
+            document.getElementById('errorLogin').innerHTML = "<b style='color: green;'>Success! You will received a response soon</b>";
+        } else {
+            document.getElementById('errorLogin').innerHTML = "Soory :/ An error occured";
+        }
+    });
+
 }
 
 
@@ -234,4 +297,10 @@ function baguette() {
         document.getElementById('baguette-menu').remove();
         window.location.href='#profile-sect';
     }, 5000);
+}
+
+
+// DELETE COOKIE
+function deleteCookie(name) {
+    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }

@@ -1,0 +1,78 @@
+{
+    "myNameIs": {
+        "fr": "Je m'appel <span>Yohan</span>",
+        "en": "My name is <span>Yohan</span>"
+    },
+    "iMaFrenchDev": {
+        "fr": "je suis un <span>developpeur français</span><b onclick='baguette();'>.</b>",
+        "en": "I am a <span>french developper</span><b onclick='baguette();'>.</b>"
+    },
+    "basedOnFullStack": {
+        "fr": "Basé en fullstack,<br>je réalise tout type de site internet",
+        "en": "Based on fullstack,<br>I make all types of website"
+    },
+    "btnSeeMore": {
+        "fr": "Voir plus",
+        "en": "See more"
+    },
+    "wantAWebSite": {
+        "fr": "Envie d'avoir un site ?",
+        "en": "Want a website?"
+    },
+    "checkMyWork": {
+        "fr": "Voir mes réalisations",
+        "en": "Check my work"
+    },
+    "titleMyLanguage": {
+        "fr": "Mes langues",
+        "en": "My languages"
+    },
+    "constantlyLearning": {
+        "fr": "Site web ou application de bureau. Je suis constamment en train d'apprendre pour améliorer mes connaissances",
+        "en": "Website or Desktop application. I'm constantly learning to improve my knowledge"
+    },
+    "titleMyWorks": {
+        "fr": "Mes réalisations",
+        "en": "My works"
+    },
+    "titleMyExperience": {
+        "fr": "Mes expériences",
+        "en": "My experiences"
+    },
+    "myExp-MaSauvegarde-date": {
+        "fr": "Mai 2023 - Août 2023",
+        "en": "May 2023 - August 2023"
+    },
+    "myExp-MaSauvegarde-detail": {
+        "fr": "Stage & CDD en tant que développeur web fullstack",
+        "en": "Intership & Fixed-term contract as a fullstack web developer"
+    },
+    "myExp-MaSauvegarde2-date": {
+        "fr": "Mai 2023 - Août 2023",
+        "en": "May 2023 - August 2023"
+    },
+    "myExp-MaSauvegarde2-detail": {
+        "fr": "Stage & CDD en tant que développeur backend",
+        "en": "Intership & Fixed-term contract as a backend web developer"
+    },
+    "contactMe": {
+        "fr": "Me contacter",
+        "en": "Contact me"
+    },
+    "contact-emailAdress": {
+        "fr": "Adresse mail",
+        "en": "Email adress"
+    },
+    "contact-subject": {
+        "fr": "Sujet",
+        "en": "Subject"
+    },
+    "contact-message": {
+        "fr": "Message",
+        "en": "Message"
+    },
+    "contact-btnSend": {
+        "fr": "Envoyer",
+        "en": "Send"
+    }
+}
