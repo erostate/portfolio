@@ -184,19 +184,16 @@ menu ul li img {
 }
 @keyframes goDownBtn {
     20% {
-        border: solid 2px orange;
-    }
-    40% {
-        border: solid 2px yellow;
-    }
-    60% {
         border: solid 2px green;
     }
-    80% {
-        border: solid 2px magenta;
+    40% {
+        border: solid 2px orange;
     }
-    100% {
-        border: solid 2px #00233B;
+    60% {
+        border: solid 2px yellow;
+    }
+    80% {
+        border: solid 2px red;
     }
 }
 /* Work */
@@ -229,6 +226,12 @@ menu ul li img {
 }
 #container #work-sect .contain .card img {
     width: 100%;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+#container #work-sect .contain .card img:hover {
+    scale: 1.1;
+    transition: all 0.15s ease-in-out;
 }
 #container #work-sect .contain .card h2 {
     margin: 5px 0;
@@ -331,6 +334,10 @@ menu ul li img {
 #container #exp-sect .contain .card img {
     width: 80%;
 }
+#container #exp-sect .contain .card .company-name {
+    font-size: 200%;
+    align-self: flex-start;
+}
 #container #exp-sect .contain .card h2 {
     margin: 10px 0 5px 0;
     align-self: flex-start;
@@ -430,11 +437,11 @@ button {
     background: #00243e;
     color: white;
     font-size: 130%;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 button:hover {
     background: #001524;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 #container #baguette-sect {
@@ -511,13 +518,14 @@ label {
     /* background-color: #120103; */
     background-position: 50% 50%;
     background-size: cover;
-    transition: left 0s .75s;
+    transition: left 0s 0.35s;
 }
-[id^="slide"]:checked + .slide {
+[id^="maSauv1-slide"]:checked + .slide,
+[id^="maSauv2-slide"]:checked + .slide {
     left: 0;
     z-index: 100;
     background-color: #00233B;
-    transition: left .65s ease-out;
+    transition: left 0.35s ease-out;
 }
 .kartoshka {
     position: absolute;
@@ -565,21 +573,25 @@ nav:hover label {
     right: 10px;
 }
 .slide .prev, .slide .next { opacity: 0; }
-[id^="slide"]:checked + .slide .prev, [id^="slide"]:checked + .slide .next {
+[id^="maSauv1-slide"]:checked + .slide .prev, [id^="maSauv1-slide"]:checked + .slide .next,
+[id^="maSauv2-slide"]:checked + .slide .prev, [id^="maSauv2-slide"]:checked + .slide .next {
     opacity: 1;
-    transition: all .5s .5s;
+    transition: all 0.15s 0.15s;
 }
 .slide h1 {
     opacity: 0;
     transform: translateY(100%);
-    transition: transform .5s .5s, opacity .5s;
+    transition: transform 0.15s 0.15s, opacity 0.15s;
 }
-[id^="slide"]:checked + .slide h1,
-[id^="slide"]:checked + .slide p,
-[id^="slide"]:checked + .slide img {
+[id^="maSauv1-slide"]:checked + .slide h1,
+[id^="maSauv1-slide"]:checked + .slide p,
+[id^="maSauv1-slide"]:checked + .slide img,
+[id^="maSauv2-slide"]:checked + .slide h1,
+[id^="maSauv2-slide"]:checked + .slide p,
+[id^="maSauv2-slide"]:checked + .slide img {
     opacity: 1;
     transform: translateY(0);
-    transition: all .5s .5s;
+    transition: all 0.15s 0.15s;
 }
 .slide-one img {
     margin-top: 60px;

@@ -48,12 +48,12 @@
         "en": "Intership & Fixed-term contract as a fullstack web developer"
     },
     "myExp-MaSauvegarde2-date": {
-        "fr": "Mai 2023 - Août 2023",
-        "en": "May 2023 - August 2023"
+        "fr": "Janvier 2024 - Février 2024",
+        "en": "January 2024 - February 2024"
     },
     "myExp-MaSauvegarde2-detail": {
-        "fr": "Stage & CDD en tant que développeur backend",
-        "en": "Intership & Fixed-term contract as a backend web developer"
+        "fr": "Stage en tant que développeur backend",
+        "en": "Intership as a backend web developer"
     },
     "contactMe": {
         "fr": "Me contacter",
@@ -74,5 +74,77 @@
     "contact-btnSend": {
         "fr": "Envoyer",
         "en": "Send"
+    },
+    "myExp-MaSauv1-jobType": {
+        "fr": "Solution de sauvegarde externalisée",
+        "en": "Outsourced backup solution"
+    },
+    "myExp-MaSauv2-jobType": {
+        "fr": "Solution de sauvegarde externalisée",
+        "en": "Outsourced backup solution"
+    },
+    "myExp-MaSauv1-descCompany": {
+        "fr": "Editeur de solutions de sauvegarde externalisée s'adressant aux <b>éditeurs de logiciel</b>, <b>prestataires informatique</b>, ou <b>services informatique interne</b>.<br>Certifié <b>ISO 27001</b> et <b>HDS</b>.",
+        "en": "Editor of outsourced backup solutions aimed at <b>software publishers</b>, <b>IT service providers</b>, or <b>internal IT services</b>.<br>Certified <b>ISO 27001</b> and <b>HDS</b>."
+    },
+    "myExp-MaSauv2-descCompany": {
+        "fr": "Editeur de solutions de sauvegarde externalisée s'adressant aux <b>éditeurs de logiciel</b>, <b>prestataires informatique</b>, ou <b>services informatique interne</b>.<br>Certifié <b>ISO 27001</b> et <b>HDS</b>.",
+        "en": "Editor of outsourced backup solutions aimed at <b>software publishers</b>, <b>IT service providers</b>, or <b>internal IT services</b>.<br>Certified <b>ISO 27001</b> and <b>HDS</b>."
+    },
+    "myExp-MaSauv1-titleTheCompany": {
+        "fr": "L'entreprise",
+        "en": "The company (in french only)"
+    },
+    "myExp-MaSauv2-titleTheCompany": {
+        "fr": "L'entreprise",
+        "en": "The company (in french only)"
+    },
+    "myExp-MaSauv1-period": {
+        "fr": "<b>Période de stage :</b> 09 Mai 2023 - 30 Juin 2023<br><b>Période de CDD :</b> 04 Juillet 2023 - 25 Août 2023",
+        "en": "<b>Internship period :</b> May 9, 2023 - June 30, 2023<br><b>Fixed-term contract period :</b> July 4, 2023 - August 25, 2023"
+    },
+    "myExp-MaSauv2-period": {
+        "fr": "<b>Période de stage :</b> 08 Janvier 2024 - 16 Février 2024",
+        "en": "<b>Internship period :</b> January 8, 2024 - February 16, 2024"
+    },
+    "myExp-MaSauv1-titleMyTasks": {
+        "fr": "Mes missions",
+        "en": "My tasks"
+    },
+    "myExp-MaSauv1-titleMyTasks2": {
+        "fr": "Mes missions",
+        "en": "My tasks"
+    },
+    "myExp-MaSauv2-titleMyTasks": {
+        "fr": "Mes missions",
+        "en": "My tasks"
+    },
+    "myExp-MaSauv1-subtitleDocLina": {
+        "fr": "Documentation Lina",
+        "en": "Lina documentation"
+    },
+    "myExp-MaSauv2-subtitleNepProject": {
+        "fr": "Le projet NEP",
+        "en": "The NEP project"
+    },
+    "myExp-MaSauv2-subtitleInfra": {
+        "fr": "L'infrastructure",
+        "en": "The infrastructure"
+    },
+    "myExp-MaSauv2-subtitleInfra2": {
+        "fr": "L'infrastructure",
+        "en": "The infrastructure"
+    },
+    "myExp-MaSauv2-subtitleProjectManag": {
+        "fr": "La gestion de projet",
+        "en": "Project management"
+    },
+    "myExp-MaSauv2-subtitleProjectManag2": {
+        "fr": "La gestion de projet",
+        "en": "Project management"
+    },
+    "myExp-MaSauv2-oneOfMyManyProjects": {
+        "fr": "Un de mes nombreux projets",
+        "en": "One of my many projects"
     }
 }

@@ -8,7 +8,7 @@ function displayLang() {
     }
 }
 
-// Récupérer la langue actuelle dans le cookie au lancement de la page
+// Get the current language in the cookie
 if (getCookie('lang') == 'fr') {
     changeLang('fr');
     displayLang();
