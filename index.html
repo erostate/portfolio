@@ -12,6 +12,7 @@
 </head>
 <body>
     <div id="containerQuaso"></div>
+    <div id="containerMe"></div>
 
     <!-- LEFT MENU -->
     <menu id="left-menu">
@@ -19,6 +20,7 @@
             <li onclick="moveSect('profile');" class="menuIcon"><i class="fa-solid fa-user"></i></li>
             <li onclick="moveSect('langu');" class="menuIcon"><i class="fa-solid fa-code"></i></li>
             <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
+            <li onclick="moveSect('school');" class="menuIcon"><i class="fa-solid fa-school"></i></li>
             <li onclick="moveSect('exp');" class="menuIcon"><i class="fa-solid fa-flask"></i></li>
             <li onclick="moveSect('contact');" class="menuIcon"><i class="fa-solid fa-address-book"></i></li>
             <li onclick="openLangPanel();" id="noot" class="sel-language">
@@ -41,21 +43,23 @@
         <!-- Profile -->
         <section class="section" id="profile-sect">
             <div id="content">
-                <div>
-                    <h1 onclick="yeetQuaso();" style="cursor: copy;" title="Click me ;)">HEY!!!</h1>
-                    <h2 data-lang="myNameIs">My name is <span>Yohan</span></h2>
-                    <h2 data-lang="iMaFrenchDev">I am a <span>french developper</span><b onclick="baguette();">.</b></h2>
-                    <p data-lang="basedOnFullStack">
-                        Based on fullstack,<br>
-                        I make all types of website
-                    </p>
-                    <button onclick="window.open('https://blms.fr/')">Bloom's Studio</button>
-                    <button onclick="openModal('all-my-service-modal')">All my service</button>
+                <div class="left-menu">
+                    <img onclick="yeetMe()" class="me-img" style="cursor: copy;" src="assets/img/me.jpg" alt="Me">
+                    <span>
+                        <h1 onclick="yeetQuaso();" style="cursor: copy;" title="Click me ;)">HEY!!!</h1>
+                        <h2 data-lang="myNameIs">My name is <span>Yohan</span></h2>
+                        <h2 data-lang="iMaFrenchDev">I am a <span>french developper</span><b onclick="baguette();">.</b></h2>
+                    </span>
                 </div>
-                <div>
-                    <h2 data-lang="wantAWebSite">Want a website?</h2>
-                    <p data-lang="checkMyWork">Check my work</p>
-                    <button data-lang="btnSeeMore" onclick="moveSect('work');">See more</button>
+                <div class="right-menu">
+                    <span>
+                        <p data-lang="basedOnFullStack">
+                            Based on fullstack,<br>
+                            I make website for <b>small business</b> or <b>personal project</b>.
+                        </p>
+                        <button data-lang="btnGoToBlmsWebsite" onclick="window.open('https://blms.fr/')">My website : Bloom's Studio</button>
+                        <button data-lang="btnCheckMyWork" onclick="moveSect('work');">Check my works</button>
+                    </span>
                 </div>
             </div>
             <div id="downArrow">
@@ -119,6 +123,32 @@
             </div>
         </section>
 
+        <!-- School -->
+        <section class="section" id="school-sect">
+            <h2 data-lang="titleMySchools">My schools</h2>
+            <div class="contain">
+                <div class="card">
+                    <img src="assets/img/school/aragon-picasso.jpg" alt="Aragon-Picasso" title="Click to view in maps" onclick="window.open('https://maps.app.goo.gl/tJhw45VWwYWdszow8')">
+                    <h2>Lycée Aragon-Picasso</h2>
+                    <p data-lang="schoolDateAragonPicasso">Septembre 2019 - Juin 2022</p>
+                    <p class="formation">
+                        BAC Pro Système Numérique <u id="showPinsRISC" title="Réseaux informatique et Système Communiquant">option RISC</u>
+                        <span class="pins" id="pinsRISC">Réseaux informatique et Système Communiquant</span>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/school/ella-fitzgerald.jpg" alt="Ella-Fitzgerald" title="Click to view in maps" onclick="window.open('https://maps.app.goo.gl/kxGwjuxUJLLzfpko6')">
+                    <h2>Lycée Ella-Fitzgerald</h2>
+                    <p data-lang="schoolDateEllaFitzgerald">Septembre 2022 - Juillet 2024</p>
+                    <p class="formation">
+                        BTS <u id="showPinsSIO" title="Services Informatique aux Organisations">SIO</u> <u id="showPinsSLAM" title="Solution Logiciel et Application Métier">option SLAM</u>
+                        <span class="pins" id="pinsSIO">Services Informatique aux Organisations</span>
+                        <span class="pins" id="pinsSLAM">Solution Logiciel et Application Métier</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Experience -->
         <section class="section" id="exp-sect">
             <h2 data-lang="titleMyExperience">My experiences</h2>
@@ -166,6 +196,12 @@
                 </div>
             </div>
         </section>
+
+        <!-- All my service MODAL -->
+        <div id="all-my-service-modal" class="modal" style="display: none;">
+            <p class="invite-to-close-modal">Click here to close modal</p>
+            <section class="modal-content"></section>
+        </div>
 
         <!-- Experience MODAL -->
         <div id="ma-sauvegarde1-modal" class="modal" style="display: none;">

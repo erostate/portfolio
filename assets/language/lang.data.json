@@ -8,20 +8,16 @@
         "en": "I am a <span>french developper</span><b onclick='baguette();'>.</b>"
     },
     "basedOnFullStack": {
-        "fr": "Basé en fullstack,<br>je réalise tout type de site internet",
-        "en": "Based on fullstack,<br>I make all types of website"
+        "fr": "Basé sur fullstack,<br>je réalise des sites web pour des <b>petites entreprises</b> ou des <b>projets personnels</b>",
+        "en": "Based on fullstack,<br>I make website for <b>small business</b> or <b>personal project</b>"
     },
-    "btnSeeMore": {
-        "fr": "Voir plus",
-        "en": "See more"
+    "btnGoToBlmsWebsite": {
+        "fr": "Mon site web : Bloom's Studio",
+        "en": "My website : Bloom's Studio"
     },
-    "wantAWebSite": {
-        "fr": "Envie d'avoir un site ?",
-        "en": "Want a website?"
-    },
-    "checkMyWork": {
+    "btnCheckMyWork": {
         "fr": "Voir mes réalisations",
-        "en": "Check my work"
+        "en": "Check my works"
     },
     "titleMyLanguage": {
         "fr": "Mes langues",
@@ -34,6 +30,18 @@
     "titleMyWorks": {
         "fr": "Mes réalisations",
         "en": "My works"
+    },
+    "schoolDateAragonPicasso": {
+        "fr": "Septembre 2019 - Juin 2022",
+        "en": "September 2019 - June 2022"
+    },
+    "schoolDateEllaFitzgerald": {
+        "fr": "Septembre 2022 - Juillet 2024",
+        "en": "September 2022 - July 2024"
+    },
+    "titleMySchools": {
+        "fr": "Mon parcours scolaire",
+        "en": "My schools"
     },
     "titleMyExperience": {
         "fr": "Mes expériences",

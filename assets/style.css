@@ -118,26 +118,36 @@ menu ul li img {
     align-items: center;
     height: 100vh;
 }
-#container #profile-sect #content div:nth-child(1) h1 {
+#container #profile-sect #content div.left-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#container #profile-sect #content div.left-menu h1 {
     font-size: 300%;
 }
-#container #profile-sect #content div:nth-child(1) h2 {
+#container #profile-sect #content div.left-menu h2 {
     font-weight: normal;
     font-size: 250%;
 }
-#container #profile-sect #content div:nth-child(1) h2:nth-child(2) span {
+#container #profile-sect #content div.left-menu h2:nth-child(2) span {
     font-weight: bold;
 }
-#container #profile-sect #content div:nth-child(1) h2:nth-child(3) span {
+#container #profile-sect #content div.left-menu h2:nth-child(3) span {
     font-weight: bold;
     font-style: italic;
 }
-#container #profile-sect #content div:nth-child(1) h2:nth-child(3) b {
+#container #profile-sect #content div.left-menu h2:nth-child(3) b {
     cursor: pointer;
 }
-#container #profile-sect #content div:nth-child(1) p {
-    font-size: 200%;
-    margin-top: 50px;
+#container #profile-sect #content div.right-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#container #profile-sect #content img.me-img {
+    width: 250px;
+    border-radius: 50%;
 }
 #container #profile-sect #content div button {
     cursor: pointer;
@@ -196,6 +206,53 @@ menu ul li img {
         border: solid 2px red;
     }
 }
+/* Language */
+#container #langu-sect {
+    border-top: solid 2px #00233B;
+    border-bottom: solid 2px #00233B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container #langu-sect p {
+    margin-bottom: 50px;
+    font-style: italic;
+}
+#container #langu-sect .contain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#container #langu-sect .contain .card {
+    border-radius: 0.3rem;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container #langu-sect .contain .card img {
+    width: 180px;
+}
+#container #langu-sect .contain .card .yeet {
+    font-size: 100px;
+}
+#container #langu-sect .contain .card h2 {
+    margin: 5px 0;
+}
+#container #langu-sect .contain .card p {
+    cursor: pointer;
+    color: aqua;
+    transition: color 0.15s ease-in-out;
+}
+#container #langu-sect .contain .card p:hover {
+    color: rgb(0, 184, 184);
+    transition: color 0.15s ease-in-out;
+}
 /* Work */
 #container #work-sect {
     border-top: solid 2px #00233B;
@@ -245,8 +302,8 @@ menu ul li img {
     color: rgb(0, 184, 184);
     transition: color 0.15s ease-in-out;
 }
-/* Language */
-#container #langu-sect {
+/* School */
+#container #school-sect {
     border-top: solid 2px #00233B;
     border-bottom: solid 2px #00233B;
     display: flex;
@@ -254,43 +311,57 @@ menu ul li img {
     align-items: center;
     justify-content: center;
 }
-#container #langu-sect p {
+#container #school-sect h2 {
     margin-bottom: 50px;
-    font-style: italic;
 }
-#container #langu-sect .contain {
+#container #school-sect .contain {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
 }
-#container #langu-sect .contain .card {
+#container #school-sect .contain .card {
+    background: #00233B;
+    padding: 5px;
     border-radius: 0.3rem;
-    width: 200px;
+    width: 400px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-#container #langu-sect .contain .card img {
-    width: 180px;
+#container #school-sect .contain .card img {
+    width: 100%;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+    height: 250px;
 }
-#container #langu-sect .contain .card .yeet {
-    font-size: 100px;
+#container #school-sect .contain .card img:hover {
+    scale: 1.1;
+    transition: all 0.15s ease-in-out;
 }
-#container #langu-sect .contain .card h2 {
+#container #school-sect .contain .card h2 {
     margin: 5px 0;
 }
-#container #langu-sect .contain .card p {
-    cursor: pointer;
+#container #school-sect .contain .card p {
     color: aqua;
-    transition: color 0.15s ease-in-out;
 }
-#container #langu-sect .contain .card p:hover {
-    color: rgb(0, 184, 184);
-    transition: color 0.15s ease-in-out;
+#container #school-sect .contain .card p.formation {
+    color: white;
+    font-style: italic;
+}
+#container #school-sect .contain .card .pins {
+    display: none;
+    color: rgb(220, 140, 90);
+}
+#showPinsRISC:hover ~ #pinsRISC {
+    display: block !important;
+}
+#showPinsSIO:hover ~ #pinsSIO {
+    display: block !important;
+}
+#showPinsSLAM:hover ~ #pinsSLAM {
+    display: block !important;
 }
 /* Exp Section */
 #container #exp-sect {

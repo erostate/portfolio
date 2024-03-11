@@ -252,6 +252,43 @@ function yeetQuaso() {
     }, 3000);
 }
 // EASTER EGG 2
+function yeetMe() {
+    const nbMe = 24;
+    const containerMe = document.getElementById('containerMe');
+    for (let i = 1; i <= nbMe; i++) {
+        me = document.createElement('img');
+        me.src = "assets/img/me_raining.png";
+        me.id = "me-"+i;
+        me.style.marginTop = "-300px";
+        me.style.width = "300px";
+        me.style.position = "absolute";
+        me.style.userSelect = "none";
+        containerMe.appendChild(me);
+    }
+
+    var leftSpacing = -300;
+    for (let i = 1; i <= nbMe; i++) {
+        setTimeout(function() {
+            if (leftSpacing == 1800) {
+                leftSpacing = 0;
+            } else {
+                leftSpacing = leftSpacing + 300;
+            }
+            meName = 'me-'+i;
+            me = document.getElementById(meName);
+            me.style.transition = 'margin-top '+getRandomArbitrary(0.50, 3)+'s ease-in-out, transform '+getRandomArbitrary(2, 4)+'s ease-in-out';
+            me.style.marginTop = '1000px';
+            me.style.marginLeft = leftSpacing+'px';
+            me.style.transform = 'rotate('+getRandomArbitrary(-360, 360)+'deg)';
+        }, 500);
+    }
+
+    setTimeout(function() {
+        containerMe.innerHTML = "";
+        // yeetMe();
+    }, 3000);
+}
+// EASTER EGG 3
 function baguette() {
     // CONTAINER
     const container = document.getElementById('container');
@@ -296,8 +333,9 @@ function baguette() {
         document.getElementById('baguette-sect').remove();
         document.getElementById('baguette-menu').remove();
         window.location.href='#profile-sect';
-    }, 5000);
+    }, 2000);
 }
+// TODO: Add an easter egg if 2 easters eggs 1 and 3 easters eggs 2 is clicked
 
 
 // DELETE COOKIE
