@@ -335,7 +335,74 @@ function baguette() {
         window.location.href='#profile-sect';
     }, 2000);
 }
-// TODO: Add an easter egg if 2 easters eggs 1 and 3 easters eggs 2 is clicked
+// EASTER EGG 4
+function kikiHasSpawned() {
+    // CONTAINER
+    const container = document.getElementById('containerKiki');
+    
+    // CREATE img
+    kiki = document.createElement('img');
+    kiki.src = "assets/img/kiki.jpg";
+    kiki.id = "kikiImg";
+    kiki.style.marginTop = "1000px";
+    kiki.style.width = "100vw";
+    kiki.style.position = "absolute";
+    kiki.style.userSelect = "none";
+    container.appendChild(kiki);
+
+    // UP kiki's img
+    setTimeout(function() {
+        kikiAct = document.getElementById('kikiImg');
+        kikiAct.style.transition = 'all 3s ease-in-out';
+        kikiAct.style.marginTop = '0';
+    }, 1000);
+
+    // DOWN kiki's img
+    setTimeout(function() {
+        kikiAct = document.getElementById('kikiImg');
+        kikiAct.style.transition = 'all 3s ease-in-out';
+        kikiAct.style.marginTop = '1000px';
+    }, 5000);
+
+    // DELETE kiki's img
+    setTimeout(function() {
+        container.innerHTML = "";
+    }, 8000);
+}
+// EASTER EGG 5
+function kikiHasGrued() {
+    // CONTAINER
+    const container = document.getElementById('containerKiki');
+    
+    // CREATE img
+    kiki = document.createElement('img');
+    kiki.src = "assets/img/kiki.jpg";
+    kiki.id = "kikiImg";
+    kiki.style.marginTop = "1000px";
+    kiki.style.width = "100vw";
+    kiki.style.position = "absolute";
+    kiki.style.userSelect = "none";
+    container.appendChild(kiki);
+
+    // UP kiki's img
+    setTimeout(function() {
+        kikiAct = document.getElementById('kikiImg');
+        kikiAct.style.transition = 'all 3s ease-in-out';
+        kikiAct.style.marginTop = '0';
+    }, 1000);
+
+    // DOWN kiki's img
+    setTimeout(function() {
+        kikiAct = document.getElementById('kikiImg');
+        kikiAct.style.transition = 'all 3s ease-in-out';
+        kikiAct.style.marginTop = '1000px';
+    }, 5000);
+
+    // DELETE kiki's img
+    setTimeout(function() {
+        container.innerHTML = "";
+    }, 8000);
+}
 
 
 // DELETE COOKIE

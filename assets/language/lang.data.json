@@ -8,8 +8,8 @@
         "en": "I am a <span>french developper</span><b onclick='baguette();'>.</b>"
     },
     "basedOnFullStack": {
-        "fr": "Basé sur fullstack,<br>je réalise des sites web pour des <b>petites entreprises</b> ou des <b>projets personnels</b>",
-        "en": "Based on fullstack,<br>I make website for <b>small business</b> or <b>personal project</b>"
+        "fr": "<span onclick=\"kikiHasSpawned()\">Basé</span> sur fullstack,<br>je réalise des sites web pour des <b>petites entreprises</b> ou des <b>projets personnels</b>",
+        "en": "<span onclick=\"kikiHasSpawned()\">Based</span> on fullstack,<br>I make website for <b>small business</b> or <b>personal project</b>"
     },
     "btnGoToBlmsWebsite": {
         "fr": "Mon site web : Bloom's Studio",
