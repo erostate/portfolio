@@ -19,6 +19,7 @@
     <menu id="left-menu">
         <ul id="menu">
             <li onclick="moveSect('profile');" class="menuIcon"><i class="fa-solid fa-user"></i></li>
+            <li onclick="moveSect('about')" class="menuIcon"><i class="fa-solid fa-address-card"></i></li>
             <li onclick="moveSect('langu');" class="menuIcon"><i class="fa-solid fa-code"></i></li>
             <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
             <li onclick="moveSect('school');" class="menuIcon"><i class="fa-solid fa-school"></i></li>
@@ -51,6 +52,7 @@
                         <h2 data-lang="myNameIs">My name is <span>Yohan</span></h2>
                         <h2 data-lang="iMaFrenchDev">I am a <span>french developper</span><b onclick="baguette();">.</b></h2>
                     </span>
+                    <button data-lang="btnSeeMore">See more</button>
                 </div>
                 <div class="right-menu">
                     <span>
@@ -64,13 +66,61 @@
                 </div>
             </div>
             <div id="downArrow">
-                <span onclick="moveSect('langu')"><i class="fa-solid fa-arrow-down"></i></span>
+                <span onclick="moveSect('about')"><i class="fa-solid fa-arrow-down"></i></span>
+            </div>
+        </section>
+        
+        <!-- About -->
+        <section class="section" id="about-sect">
+            <div class="header">
+                <h1 data-lang="titleAboutMe">About me</h1>
+                <p data-lang="aboutMeDesc">Somes informations to learn more about me</p>
+            </div>
+            <div class="contain">
+                <div class="card">
+                    <span class="title">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>-</h1>
+                        <h2 data-lang="titleWhoAmI">Who am I ?</h2>
+                    </span>
+                    <p data-lang="whoAmIDesc">
+                        I am a french developper, I am <b class="setMyAge">19</b> years old and I am currently in high school in BTS SIO, SLAM option (<a href="#school-sect">check more here</a>).<br>
+                        I am passionate about computer science and I am constantly learning to improve my knowledge.<br>
+                        In parallel, I am a firefighter in the volunteer fire department of my city.<br>
+                        I am owner of a small organization, Bloom's Studio, where I work for small business or personal project with a friend.
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="title">
+                        <i class="fa-solid fa-address-card"></i>
+                        <h1>-</h1>
+                        <h2 data-lang="titleMySkills">My skills</h2>
+                        <h3>| <a data-lang="btnGoToMySkills" href="#langu-sect">My languages</a></h3>
+                    </span>
+                    <p data-lang="mySkillsDesc">
+                        I am a fullstack developper, so I principally make website but I can also make desktop application, and I currently learn to make mobile application.<br>
+                        To video games player, I also make Discord bot and I will soon learn to how to make a video game.
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="title">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h1>-</h1>
+                        <h2 data-lang="titleMyProjects">My projects</h2>
+                    </span>
+                    <p data-lang="myProjectsDesc">
+                        Some of my current projects are listed in the <a href="#work-sect">work section</a>.<br>
+                        I also have somes personals projects that I am currently developing, like a music platform linked to a Discord bot, or somes personals websites for a FiveM server.<br>
+                        I work for small company too, and I can wait for a new customer. All informations about that is present on my website : <a target="_blank" href="https://blms.fr/">Bloom's Studio</a><br>
+                        I work on a lot of projects, that you can access in this list in my website : <a target="_blank" href="https://project.blms.fr/exper/" target="_blank">Bloom's Studio - Project</a>.
+                    </p>
+                </div>
             </div>
         </section>
         
         <!-- Langage -->
         <section class="section" id="langu-sect">
-            <h2 data-lang="titleMyLanguage">My language</h2>
+            <h1 data-lang="titleMyLanguage">My language</h1>
             <p data-lang="constantlyLearning">Website or Desktop application. I'm constantly learning to improve my knowledge</p>
             <div class="contain">
                 <div class="card">
@@ -122,6 +172,8 @@
                     <h5><i>Under developpment</i></h5>
                 </div>
             </div>
+            <br>
+            <button data-lang="btnGoToAllMyWorks" onclick="window.open('https://project.blms.fr/exper/')">Check all my public works</button>
         </section>
 
         <!-- School -->

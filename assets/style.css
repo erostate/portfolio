@@ -118,6 +118,9 @@ menu ul li img {
     align-items: center;
     height: 100vh;
 }
+#container #profile-sect #content div {
+    width: 35%;
+}
 #container #profile-sect #content div.left-menu {
     display: flex;
     flex-direction: column;
@@ -206,6 +209,59 @@ menu ul li img {
         border: solid 2px red;
     }
 }
+/* About */
+#container #about-sect {
+    border-top: solid 2px #00233B;
+    border-bottom: solid 2px #00233B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#container #about-sect .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#container #about-sect .header h1 {
+    font-size: 250%;
+}
+#container #about-sect .header p {
+    font-size: 120%;
+}
+#container #about-sect .contain {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+#container #about-sect .contain .card {
+    display: flex;
+    flex-direction: column;
+}
+#container #about-sect .contain .card span.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+#container #about-sect .contain .card span.title h2 {
+    text-decoration-line: underline;
+}
+#container #about-sect .contain .card p {
+    font-size: 110%;
+}
+#container #about-sect .contain .card a {
+    color: aqua;
+    transition: color 0.15s ease-in-out;
+}
+#container #about-sect .contain .card a:hover {
+    color: rgb(0, 184, 184);
+    transition: color 0.15s ease-in-out;
+}
 /* Language */
 #container #langu-sect {
     border-top: solid 2px #00233B;
@@ -214,6 +270,9 @@ menu ul li img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+#container #langu-sect h1 {
+    font-size: 250%;
 }
 #container #langu-sect p {
     margin-bottom: 50px;

@@ -7,6 +7,10 @@
         "fr": "je suis un <span>developpeur français</span><b onclick='baguette();'>.</b>",
         "en": "I am a <span>french developper</span><b onclick='baguette();'>.</b>"
     },
+    "btnSeeMore": {
+        "fr": "Voir plus",
+        "en": "See more"
+    },
     "basedOnFullStack": {
         "fr": "<span onclick=\"kikiHasSpawned()\">Basé</span> sur fullstack,<br>je réalise des sites web pour des <b>petites entreprises</b> ou des <b>projets personnels</b>",
         "en": "<span onclick=\"kikiHasSpawned()\">Based</span> on fullstack,<br>I make website for <b>small business</b> or <b>personal project</b>"
@@ -19,6 +23,30 @@
         "fr": "Voir mes réalisations",
         "en": "Check my works"
     },
+    "titleAboutMe": {
+        "fr": "A propos de moi",
+        "en": "About me"
+    },
+    "titleWhoAmI": {
+        "fr": "Qui suis-je ?",
+        "en": "Who am I ?"
+    },
+    "titleMySkills": {
+        "fr": "Mes compétences",
+        "en": "My skills"
+    },
+    "btnGoToMySkills": {
+        "fr": "Mes languages",
+        "en": "My languages"
+    },
+    "titleMyProjects": {
+        "fr": "Mes projets",
+        "en": "My projects"
+    },
+    "aboutMeDesc": {
+        "fr": "Quelques informations pour en apprendre plus sur moi",
+        "en": "Somes informations to learn more about me"
+    },
     "titleMyLanguage": {
         "fr": "Mes langues",
         "en": "My languages"
@@ -30,6 +58,10 @@
     "titleMyWorks": {
         "fr": "Mes réalisations",
         "en": "My works"
+    },
+    "btnGoToAllMyWorks": {
+        "fr": "Voir toutes mes réalisations",
+        "en": "Check all my public works"
     },
     "schoolDateAragonPicasso": {
         "fr": "Septembre 2019 - Juin 2022",

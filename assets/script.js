@@ -115,7 +115,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    console.log(setMyAge());
 });
+
+function setMyAge() {
+    const dateOfBirth = "2004-11-10";
+    const currentDate = new Date();
+
+    // Get my age
+    var age = currentDate.getFullYear() - new Date(dateOfBirth).getFullYear();
+    const month = currentDate.getMonth() - new Date(dateOfBirth).getMonth();
+    if (month < 0 || (month === 0 && currentDate.getDate() < new Date(dateOfBirth).getDate())) {
+        age - 1;
+    }
+    
+    // TODO: Set my age in className "setMyAge"
+}
 
 function openModal(modalName, type) {
     document.getElementById(modalName).style.display = type;
