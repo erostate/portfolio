@@ -27,13 +27,25 @@
         "fr": "A propos de moi",
         "en": "About me"
     },
+    "aboutMeDesc": {
+        "fr": "Quelques informations pour en apprendre plus sur moi",
+        "en": "Somes informations to learn more about me"
+    },
     "titleWhoAmI": {
         "fr": "Qui suis-je ?",
         "en": "Who am I ?"
     },
+    "whoAmIDesc": {
+        "fr": "Je suis un developpeur français, j'ai <b class=\"setMyAge\">19</b> ans et je suis actuellement en BTS SIO, option SLAM (<a href=\"#school-sect\">voir plus ici</a>).<br>Je suis passionné par l'informatique et je suis constamment en train d'apprendre pour améliorer mes connaissances.<br>Je suis également sapeur-pompier volontaire dans le SDIS de ma ville.<br>Je suis le propriétaire d'une petite organisation, Bloom's Studio, où je travaille pour des petites entreprises ou des projets personnels avec un ami.",
+        "en": "I am a french developper, I am <b class=\"setMyAge\">19</b> years old and I am currently in high school in BTS SIO, SLAM option (<a href=\"#school-sect\">check more here</a>).<br> I am passionate about computer science and I am constantly learning to improve my knowledge.<br> Also, I volunteer as a firefighter in fire department of my city.<br> I am the owner of a small organization, Bloom's Studio, where I work for small businesses or personal projects with a friend."
+    },
     "titleMySkills": {
         "fr": "Mes compétences",
         "en": "My skills"
+    },
+    "mySkillsDesc": {
+        "fr": "Je suis un developpeur fullstack, donc je réalise principalement des sites web mais je peux également réaliser des applications de bureau, et j'apprends actuellement à réaliser des applications mobiles.<br> Pour les joueurs de jeux vidéo, je réalise également des bots Discord et je vais bientôt apprendre à réaliser un jeu vidéo.",
+        "en": "I am a fullstack developer, so I principally make website but I can also make desktop application, and I currently learn to make mobile application.<br> To video games player, I also make Discord bot and I will soon learn to how to make a video game."
     },
     "btnGoToMySkills": {
         "fr": "Mes languages",
@@ -43,9 +55,9 @@
         "fr": "Mes projets",
         "en": "My projects"
     },
-    "aboutMeDesc": {
-        "fr": "Quelques informations pour en apprendre plus sur moi",
-        "en": "Somes informations to learn more about me"
+    "myProjectsDesc": {
+        "fr": "Certains de mes projets actuels sont listés dans la <a href=\"#work-sect\">section réalisations</a>.<br> J'ai également des projets personnels que je suis en train de développer, comme une plateforme musicale liée à un bot Discord, ou des sites web personnels pour un serveur FiveM.<br> Je travaille également pour des petites entreprises, et je peux attendre un nouveau client. Toutes les informations à ce sujet sont présentes sur mon site web : <a target=\"_blank\" href=\"https://blms.fr/\">Bloom's Studio</a><br> Je travaille sur beaucoup de projets, que vous pouvez accéder dans cette liste sur mon site web : <a href=\"https://project.blms.fr/exper/\" target=\"_blank\">Bloom's Studio - Project</a>.",
+        "en": "Some of my current projects are listed in the <a href=\"#work-sect\">work section</a>.<br> I also have somes personals projects that I am currently developing, like a music platform linked to a Discord bot, or somes personals websites for a FiveM server.<br> I work for small company too, and I can wait for a new customer. All informations about that is present on my website : <a target=\"_blank\" href=\"https://blms.fr/\">Bloom's Studio</a><br> I work on a lot of projects, that you can access in this list in my website : <a href=\"https://project.blms.fr/exper/\" target=\"_blank\">Bloom's Studio - Project</a>."
     },
     "titleMyLanguage": {
         "fr": "Mes langues",
