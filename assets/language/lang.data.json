@@ -71,6 +71,10 @@
         "fr": "Mes soft skills",
         "en": "My soft skills"
     },
+    "mySoftSkillsSectDesc": {
+        "fr": "J'ai beaucoup de softskills, que j'utilise dans mon travail",
+        "en": "I have a lot of softskills, that I use in my work"
+    },
     "titleMyWorks": {
         "fr": "Mes réalisations",
         "en": "My works"
