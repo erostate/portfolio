@@ -20,9 +20,11 @@
         <ul id="menu">
             <li onclick="moveSect('profile');" class="menuIcon"><i class="fa-solid fa-user"></i></li>
             <li onclick="moveSect('about')" class="menuIcon"><i class="fa-solid fa-address-card"></i></li>
-            <li onclick="moveSect('langu');" class="menuIcon"><i class="fa-solid fa-code"></i></li>
-            <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
+            <li onclick="moveSect('skills');" class="menuIcon"><i class="fa-solid fa-code"></i></li>
+            <li onclick="moveSect('skills2');" class="menuIcon"><i class="fa-solid fa-cogs"></i></li>
+            <li onclick="moveSect('softskills');" class="menuIcon"><i class="fa-solid fa-brain"></i></li>
             <li onclick="moveSect('school');" class="menuIcon"><i class="fa-solid fa-school"></i></li>
+            <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
             <li onclick="moveSect('exp');" class="menuIcon"><i class="fa-solid fa-flask"></i></li>
             <li onclick="moveSect('contact');" class="menuIcon"><i class="fa-solid fa-address-book"></i></li>
             <li onclick="openLangPanel();" id="noot" class="sel-language">
@@ -95,7 +97,7 @@
                         <i class="fa-solid fa-address-card"></i>
                         <h1>-</h1>
                         <h2 data-lang="titleMySkills">My skills</h2>
-                        <h3>| <a data-lang="btnGoToMySkills" href="#langu-sect">My languages</a></h3>
+                        <h3>| <a data-lang="btnGoToMySkills" href="#skills-sect">Go to skills section</a></h3>
                     </span>
                     <p data-lang="mySkillsDesc">
                         I am a fullstack developer, so I principally make website but I can also make desktop application, and I currently learn to make mobile application.<br>
@@ -118,30 +120,181 @@
             </div>
         </section>
         
-        <!-- Langage -->
-        <section class="section" id="langu-sect">
-            <h1 data-lang="titleMyLanguage">My language</h1>
-            <p data-lang="constantlyLearning">Website or Desktop application. I'm constantly learning to improve my knowledge</p>
+        <!-- Skills -->
+        <section class="section" id="skills-sect">
+            <h1 data-lang="titleMySkillsSect">My skills</h1>
+            <p data-lang="mySkillsSectDesc">I am a fullstack developer, so I have a lot of skills in differents languages</p>
+            <div class="container">
+                <div class="contain">
+                    <div class="card">
+                        <h2>Language:</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-html5"></i>
+                        <h2>HTML 5</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-css3-alt"></i>
+                        <h2>CSS 3</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-square-js"></i>
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-php"></i>
+                        <h2>PHP</h2>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/cLanguage/csharp.png" alt="C#">
+                        <h2>C#</h2>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="card">
+                        <h2>Framework:</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-symfony"></i>
+                        <h2>Symfony</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-bootstrap"></i>
+                        <h2>Bootstrap</h2>
+                    </div>
+                    <div class="card">
+                        <img style="height: 60% !important;" src="assets/img/cLanguage/jquery.png" alt="JQuery">
+                        <h2>JQuery</h2>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="card">
+                        <h2>Database:</h2>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/cLanguage/mysql.png" alt="MySQL">
+                        <h2>MySQL</h2>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/cLanguage/phpmyadmin.png" alt="PhpMyAdmin">
+                        <h2>PhpMyAdmin</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills 2 -->
+        <section class="section" id="skills2-sect">
+            <h1 data-lang="titleMySkillsSect">My skills</h1>
+            <p data-lang="mySkillsSectDesc">I am a fullstack developer, so I have a lot of skills in differents languages</p>
+            <div class="container">
+                <div class="contain">
+                    <div class="card">
+                        <h2>IDE:</h2>
+                    </div>
+                    <div class="card">
+                        <h2>VSCode / VS</h2>
+                    </div>
+                    <div class="card">
+                        <h2>PhpStorm / Webstorm</h2>
+                    </div>
+                    <div class="card">
+                        <h2>Android Studio</h2>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="card">
+                        <h2>Software:</h2>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/cLanguage/photoshop.png" alt="Photoshop">
+                        <h2>Photoshop</h2>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/cLanguage/office.png" alt="Pack Office">
+                        <h2>Office Pack</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-google"></i>
+                        <h2>Google Pack</h2>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="card">
+                        <h2>Gestion:</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-figma"></i>
+                        <h2>Figma</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-trello"></i>
+                        <h2>Trello</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-brands fa-git"></i>
+                        <h2>Github / Gitlab</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Softskills -->
+        <section class="section" id="softskills-sect">
+            <h1 data-lang="titleMySoftSkillsSect">My softskills</h1>
+            <p data-lang="mySoftSkillsSectDesc">I have a lot of softskills, that I use in my work</p>
+            <div class="container">
+                <div class="contain">
+                    <div class="card">
+                        <i class="yeet fa-solid fa-magnifying-glass"></i>
+                        <h2>Curieux</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-solid fa-chart-line"></i>
+                        <h2>Persévérant</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-solid fa-atom"></i>
+                        <h2>Autonome</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-solid fa-brain"></i>
+                        <h2>Créatif</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-solid fa-balance-scale"></i>
+                        <h2>Organisé</h2>
+                    </div>
+                    <div class="card">
+                        <i class="yeet fa-solid fa-users"></i>
+                        <h2>Esprit d'équipe</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- School -->
+        <section class="section" id="school-sect">
+            <h2 data-lang="titleMySchools">My schools</h2>
             <div class="contain">
                 <div class="card">
-                    <i class="yeet fa-brands fa-html5"></i>
-                    <h2>HTML 5</h2>
+                    <img src="assets/img/school/aragon-picasso.jpg" alt="Aragon-Picasso" title="Click to view in maps" onclick="window.open('https://maps.app.goo.gl/tJhw45VWwYWdszow8')">
+                    <h2>Lycée Aragon-Picasso</h2>
+                    <p data-lang="schoolDateAragonPicasso">Septembre 2019 - Juin 2022</p>
+                    <p class="formation">
+                        BAC Pro Système Numérique <u id="showPinsRISC" title="Réseaux informatique et Système Communiquant">option RISC</u>
+                        <span class="pins" id="pinsRISC">Réseaux informatique et Système Communiquant</span>
+                    </p>
                 </div>
                 <div class="card">
-                    <i class="yeet fa-brands fa-css3-alt"></i>
-                    <h2>CSS 3</h2>
-                </div>
-                <div class="card">
-                    <i class="yeet fa-brands fa-square-js"></i>
-                    <h2>JS</h2>
-                </div>
-                <div class="card">
-                    <i class="yeet fa-brands fa-php"></i>
-                    <h2>PHP</h2>
-                </div>
-                <div class="card">
-                    <img src="assets/img/cLanguage/csharp.png">
-                    <!-- <h2>C#</h2> -->
+                    <img src="assets/img/school/ella-fitzgerald.jpg" alt="Ella-Fitzgerald" title="Click to view in maps" onclick="window.open('https://maps.app.goo.gl/kxGwjuxUJLLzfpko6')">
+                    <h2>Lycée Ella-Fitzgerald</h2>
+                    <p data-lang="schoolDateEllaFitzgerald">Septembre 2022 - Juillet 2024</p>
+                    <p class="formation">
+                        BTS <u id="showPinsSIO" title="Services Informatique aux Organisations">SIO</u> <u id="showPinsSLAM" title="Solution Logiciel et Application Métier">option SLAM</u>
+                        <span class="pins" id="pinsSIO">Services Informatique aux Organisations</span>
+                        <span class="pins" id="pinsSLAM">Solution Logiciel et Application Métier</span>
+                    </p>
                 </div>
             </div>
         </section>
@@ -174,32 +327,6 @@
             </div>
             <br>
             <button data-lang="btnGoToAllMyWorks" onclick="window.open('https://project.blms.fr/exper/')">Check all my public works</button>
-        </section>
-
-        <!-- School -->
-        <section class="section" id="school-sect">
-            <h2 data-lang="titleMySchools">My schools</h2>
-            <div class="contain">
-                <div class="card">
-                    <img src="assets/img/school/aragon-picasso.jpg" alt="Aragon-Picasso" title="Click to view in maps" onclick="window.open('https://maps.app.goo.gl/tJhw45VWwYWdszow8')">
-                    <h2>Lycée Aragon-Picasso</h2>
-                    <p data-lang="schoolDateAragonPicasso">Septembre 2019 - Juin 2022</p>
-                    <p class="formation">
-                        BAC Pro Système Numérique <u id="showPinsRISC" title="Réseaux informatique et Système Communiquant">option RISC</u>
-                        <span class="pins" id="pinsRISC">Réseaux informatique et Système Communiquant</span>
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="assets/img/school/ella-fitzgerald.jpg" alt="Ella-Fitzgerald" title="Click to view in maps" onclick="window.open('https://maps.app.goo.gl/kxGwjuxUJLLzfpko6')">
-                    <h2>Lycée Ella-Fitzgerald</h2>
-                    <p data-lang="schoolDateEllaFitzgerald">Septembre 2022 - Juillet 2024</p>
-                    <p class="formation">
-                        BTS <u id="showPinsSIO" title="Services Informatique aux Organisations">SIO</u> <u id="showPinsSLAM" title="Solution Logiciel et Application Métier">option SLAM</u>
-                        <span class="pins" id="pinsSIO">Services Informatique aux Organisations</span>
-                        <span class="pins" id="pinsSLAM">Solution Logiciel et Application Métier</span>
-                    </p>
-                </div>
-            </div>
         </section>
 
         <!-- Experience -->
