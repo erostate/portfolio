@@ -95,6 +95,22 @@
         "fr": "Mon parcours scolaire",
         "en": "My schools"
     },
+    "titleContStudies": {
+        "fr": "Après l'école...",
+        "en": "After school..."
+    },
+    "afterSchool-metierEnRapport": {
+        "fr": "<u>Métier en rapport avec mon BTS :</u><br>- Freelance<br>- Développeur web pour une petite entreprise",
+        "en": "<u>Job related to my BTS :</u><br>- Freelance<br>- Web developer for a small business"
+    },
+    "afterSchool-metierHorsRapport": {
+        "fr": "<u>Métier hors rapport avec mon BTS :</u><br>- Armée de terre<br>- Gendarme",
+        "en": "<u>Job not related to my BTS :</u><br>- French army<br>- Gendarme"
+    },
+    "afterSchool-poursuiteEtude": {
+        "fr": "<u>Poursuite d'étude :</u><br>- Licence DevOps Ynov, Lyon<br>- Licence DevOps Cnam, Montbrison",
+        "en": "<u>Continuation of study :</u><br>- DevOps degree Ynov, Lyon<br>- DevOps degree Cnam, Montbrison"
+    },
     "titleMyExperience": {
         "fr": "Mes expériences",
         "en": "My experiences"

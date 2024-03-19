@@ -220,6 +220,25 @@ function performSendContact() {
 
 }
 
+// Create the arrow to the "after school" section
+function createArrowToAfterSchoolSect() {
+    const startItem = document.getElementById('afterSchool-startItem');
+    const otherItems = document.getElementById('cont-studies-sect').querySelectorAll('.card:not(.start) .item');
+
+    otherItems.forEach(item => {
+        new LeaderLine(
+            startItem,
+            item,
+            {
+                color: 'white',
+                size: 3,
+                endPlug: 'arrow2',
+            }
+        );
+    })
+}
+createArrowToAfterSchoolSect();
+
 
 // EASTER EGG
 function getRandomInt(min, max) {

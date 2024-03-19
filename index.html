@@ -24,6 +24,7 @@
             <li onclick="moveSect('skills2');" class="menuIcon"><i class="fa-solid fa-cogs"></i></li>
             <li onclick="moveSect('softskills');" class="menuIcon"><i class="fa-solid fa-brain"></i></li>
             <li onclick="moveSect('school');" class="menuIcon"><i class="fa-solid fa-school"></i></li>
+            <li onclick="moveSect('cont-studies');" class="menuIcon"><i class="fa-solid fa-graduation-cap"></i></li>
             <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
             <li onclick="moveSect('exp');" class="menuIcon"><i class="fa-solid fa-flask"></i></li>
             <li onclick="moveSect('contact');" class="menuIcon"><i class="fa-solid fa-address-book"></i></li>
@@ -282,7 +283,7 @@
                     <h2>Lycée Aragon-Picasso</h2>
                     <p data-lang="schoolDateAragonPicasso">Septembre 2019 - Juin 2022</p>
                     <p class="formation">
-                        BAC Pro Système Numérique <u id="showPinsRISC" title="Réseaux informatique et Système Communiquant">option RISC</u>
+                        BAC Pro Système Numérique <u id="showPinsRISC">option RISC</u>, mention TB
                         <span class="pins" id="pinsRISC">Réseaux informatique et Système Communiquant</span>
                     </p>
                 </div>
@@ -291,10 +292,45 @@
                     <h2>Lycée Ella-Fitzgerald</h2>
                     <p data-lang="schoolDateEllaFitzgerald">Septembre 2022 - Juillet 2024</p>
                     <p class="formation">
-                        BTS <u id="showPinsSIO" title="Services Informatique aux Organisations">SIO</u> <u id="showPinsSLAM" title="Solution Logiciel et Application Métier">option SLAM</u>
+                        BTS <u id="showPinsSIO">SIO</u> <u id="showPinsSLAM">option SLAM</u>
                         <span class="pins" id="pinsSIO">Services Informatique aux Organisations</span>
                         <span class="pins" id="pinsSLAM">Solution Logiciel et Application Métier</span>
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Continuation of study -->
+        <section class="section" id="cont-studies-sect">
+            <h2 data-lang="titleContStudies">After school...</h2>
+            <div class="contain">
+                <div class="card">
+                    <div class="item">
+                        <p data-lang="afterSchool-metierEnRapport">
+                            <u>Métier en rapport :</u><br>
+                            - Freelance<br>
+                            - Développeur web pour une petite entreprise
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p data-lang="afterSchool-metierHorsRapport">
+                            <u>Métier hors sujet :</u><br>
+                            - Armée de terre<br>
+                            - Gendarmerie
+                        </p>
+                    </div>
+                </div>
+                <div class="card start">
+                    <div id="afterSchool-startItem" class="item">BTS SIO</div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <p data-lang="afterSchool-poursuiteEtude">
+                            <u>Poursuite d'étude :</u><br>
+                            - Licence DevOps Ynov<br>
+                            - License DevOps Cnam
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -604,6 +640,7 @@
     </div>
 </body>
 <!-- JS Global -->
+<script src="assets/leader-line.min.js"></script>
 <script src="assets/script.js"></script>
 
 <!-- Language -->
