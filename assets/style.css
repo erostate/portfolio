@@ -500,6 +500,7 @@ menu ul li img {
 #showPinsSLAM:hover ~ #pinsSLAM {
     display: block !important;
 }
+
 /* Cont. studies Section */
 #container #cont-studies-sect {
     border-top: solid 2px #00233B;
@@ -755,8 +756,8 @@ button:hover {
 }
 .invite-to-close-modal {
     position: fixed;
-    top: 140px;
-    left: -82px;
+    top: 50%;
+    left: -48px;
     rotate: -90deg;
     color: rgba(255, 255, 255, 0.3);
     font-weight: bold;
@@ -845,7 +846,8 @@ nav:hover label {
 }
 .slide .prev, .slide .next { opacity: 0; }
 [id^="maSauv1-slide"]:checked + .slide .prev, [id^="maSauv1-slide"]:checked + .slide .next,
-[id^="maSauv2-slide"]:checked + .slide .prev, [id^="maSauv2-slide"]:checked + .slide .next {
+[id^="maSauv2-slide"]:checked + .slide .prev, [id^="maSauv2-slide"]:checked + .slide .next,
+[id^="whoAmI-slide"]:checked + .slide .prev, [id^="whoAmI-slide"]:checked + .slide .next {
     opacity: 1;
     transition: all 0.15s 0.15s;
 }
@@ -859,13 +861,19 @@ nav:hover label {
 [id^="maSauv1-slide"]:checked + .slide img,
 [id^="maSauv2-slide"]:checked + .slide h1,
 [id^="maSauv2-slide"]:checked + .slide p,
-[id^="maSauv2-slide"]:checked + .slide img {
+[id^="maSauv2-slide"]:checked + .slide img,
+[id^="whoAmI-slide"]:checked + .slide h1,
+[id^="whoAmI-slide"]:checked + .slide p,
+[id^="whoAmI-slide"]:checked + .slide img {
     opacity: 1;
     transform: translateY(0);
     transition: all 0.15s 0.15s;
 }
 .slide-one img {
     margin-top: 60px;
+}
+#who-am-i-modal .slide-one img {
+    margin-top: 0;
 }
 .slide-one hr {
     margin: 50px 130px;
@@ -877,4 +885,53 @@ nav:hover label {
 }
 .slide-one h1 {
     font-size: 150%;
+}
+
+#who-am-i-modal .container-row {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#who-am-i-modal .container-row .row {
+    height: 50%;
+    margin: 0 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 400%;
+}
+#who-am-i-modal .container-row .row img {
+    height: 80%;
+}
+#who-am-i-modal .container-row .row span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 80%;
+}
+@media screen and (max-height: 860px) {
+    #who-am-i-modal .container-row {
+        height: 450px;
+    }
+}
+@media screen and (max-height: 800px) {
+    #who-am-i-modal .container-row {
+        height: 400px;
+    }
+}
+@media screen and (max-height: 750px) {
+    #who-am-i-modal .container-row {
+        height: 350px;
+    }
+}
+
+.info #info-frenchDev,
+.info #info-myAge,
+.info #info-sdmis,
+.info #info-blms {
+    display: none;
 }

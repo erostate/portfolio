@@ -37,7 +37,31 @@
     },
     "whoAmIDesc": {
         "fr": "Je suis un developpeur français, j'ai <b class=\"setMyAge\">19</b> ans et je suis actuellement en BTS SIO, option SLAM (<a href=\"#school-sect\">voir plus ici</a>).<br>Je suis passionné par l'informatique et je suis constamment en train d'apprendre pour améliorer mes connaissances.<br>Je suis également sapeur-pompier volontaire dans le SDIS de ma ville.<br>Je suis le propriétaire d'une petite organisation, Bloom's Studio, où je travaille pour des petites entreprises ou des projets personnels avec un ami.",
-        "en": "I am a french developper, I am <b class=\"setMyAge\">19</b> years old and I am currently in high school in BTS SIO, SLAM option (<a href=\"#school-sect\">check more here</a>).<br> I am passionate about computer science and I am constantly learning to improve my knowledge.<br> Also, I volunteer as a firefighter in fire department of my city.<br> I am the owner of a small organization, Bloom's Studio, where I work for small businesses or personal projects with a friend."
+        "en": "I am a french developper, I am <b class=\"setMyAge\">19</b> years old and I am currently in high school in BTS SIO, SLAM option (<a href=\"#school-sect\">check more here</a>).<br> I am passionate about computer science and I am constantly learning to improve my knowledge.<br> Also, I am volunteer as a firefighter in fire department of my city.<br> I am the owner of a small organization, Bloom's Studio, where I work for small businesses or personal projects with a friend."
+    },
+    "btn-aboutMe-schemaMode": {
+        "fr": "Mode schématique",
+        "en": "Schema mode"
+    },
+    "modalWhoAmIAge": {
+        "fr": "<b class=\"setMyAge\">19</b> ans",
+        "en": "<b class=\"setMyAge\">19</b> years old"
+    },
+    "modalWhoAmI-info-frenchDev": {
+        "fr": "Je suis un developpeur français basé sur le fullstack",
+        "en": "I am a french developper based on fullstack."
+    },
+    "modalWhoAmI-info-myAge": {
+        "fr": "J'ai <b class=\"setMyAge\">19</b> ans",
+        "en": "I am <b class=\"setMyAge\">19</b> years old"
+    },
+    "modalWhoAmI-info-sdmis": {
+        "fr": "Je suis sapeur-pompier volontaire dans le SDIS de ma ville",
+        "en": "I am volunteer as a firefighter in fire department of my city"
+    },
+    "modalWhoAmI-info-blms": {
+        "fr": "Je suis le propriétaire d'une petite \"organisation\", Bloom's Studio, où je travaille pour des petites entreprises ou des projets personnels avec des amis.",
+        "en": "I am the owner of a small \"organization\", Bloom's Studio, where I work for small business of personal projects with a friends."
     },
     "titleMySkills": {
         "fr": "Mes compétences",

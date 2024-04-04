@@ -233,11 +233,65 @@ function createArrowToAfterSchoolSect() {
                 color: 'white',
                 size: 3,
                 endPlug: 'arrow2',
+                endPlugSize: 2,
             }
         );
     })
 }
 createArrowToAfterSchoolSect();
+
+// Create the arrow to the "my school" section for timeline
+function createArrowToSchoolTimeline() {
+    const schoolItems = document.querySelectorAll('.school-item');
+
+    console.log(schoolItems);
+
+    nbItems = 1;
+    schoolItems.forEach(item => {
+        const timeline = document.getElementsByClassName('timeline-school-'+nbItems)[0];
+        const date = item.getElementsByTagName('p')[0].innerText;
+        new LeaderLine(
+            item,
+            timeline,
+            {
+                color: 'white',
+                size: 3,
+                endPlug: 'disc',
+                endPlugSize: 2,
+                path: 'straight',
+                endLabel: LeaderLine.captionLabel(date, {color: 'white', offset: [-130, 10]})
+            }
+        );
+        nbItems++;
+    })
+}
+createArrowToSchoolTimeline();
+
+// Over the "info-aboutMe" section
+document.getElementById('btn-frenchDev').addEventListener('mouseover', function() {
+    document.getElementById('info-frenchDev').style.display = 'block';
+});
+document.getElementById('btn-myAge').addEventListener('mouseover', function() {
+    document.getElementById('info-myAge').style.display = 'block';
+});
+document.getElementById('btn-sdmis').addEventListener('mouseover', function() {
+    document.getElementById('info-sdmis').style.display = 'block';
+});
+document.getElementById('btn-blms').addEventListener('mouseover', function() {
+    document.getElementById('info-blms').style.display = 'block';
+});
+document.getElementById('btn-frenchDev').addEventListener('mouseout', function() {
+    document.getElementById('info-frenchDev').style.display = 'none';
+});
+document.getElementById('btn-myAge').addEventListener('mouseout', function() {
+    document.getElementById('info-myAge').style.display = 'none';
+});
+document.getElementById('btn-sdmis').addEventListener('mouseout', function() {
+    document.getElementById('info-sdmis').style.display = 'none';
+});
+document.getElementById('btn-blms').addEventListener('mouseout', function() {
+    document.getElementById('info-blms').style.display = 'none';
+});
 
 
 // EASTER EGG

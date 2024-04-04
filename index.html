@@ -25,8 +25,8 @@
             <li onclick="moveSect('softskills');" class="menuIcon"><i class="fa-solid fa-brain"></i></li>
             <li onclick="moveSect('school');" class="menuIcon"><i class="fa-solid fa-school"></i></li>
             <li onclick="moveSect('cont-studies');" class="menuIcon"><i class="fa-solid fa-graduation-cap"></i></li>
-            <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
             <li onclick="moveSect('exp');" class="menuIcon"><i class="fa-solid fa-flask"></i></li>
+            <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
             <li onclick="moveSect('contact');" class="menuIcon"><i class="fa-solid fa-address-book"></i></li>
             <li onclick="openLangPanel();" id="noot" class="sel-language">
                 <img id="currentLanguage" src="https://asset.blms.fr/picture/flag/en.png" alt="Flag En">
@@ -78,7 +78,7 @@
             <div class="header">
                 <h1 data-lang="titleAboutMe">About me</h1>
                 <p data-lang="aboutMeDesc">Somes informations to learn more about me</p>
-                <button onclick="openModal('who-am-i-modal', 'block')">Qui suis-je ?</button>
+                <button data-lang="btn-aboutMe-schemaMode" onclick="openModal('who-am-i-modal', 'block')">Mode schématique</button>
             </div>
             <div class="contain">
                 <div class="card">
@@ -245,16 +245,16 @@
                         <h2>Autonome</h2>
                     </div>
                     <div class="card">
+                        <i class="yeet fa-solid fa-users"></i>
+                        <h2>Esprit d'équipe</h2>
+                    </div>
+                    <div class="card">
                         <i class="yeet fa-solid fa-brain"></i>
                         <h2>Créatif</h2>
                     </div>
                     <div class="card">
                         <i class="yeet fa-solid fa-balance-scale"></i>
                         <h2>Organisé</h2>
-                    </div>
-                    <div class="card">
-                        <i class="yeet fa-solid fa-users"></i>
-                        <h2>Esprit d'équipe</h2>
                     </div>
                 </div>
             </div>
@@ -264,7 +264,7 @@
         <section class="section" id="school-sect">
             <h2 data-lang="titleMySchools">My schools</h2>
             <div class="contain">
-                <div class="card">
+                <div class="card school-item">
                     <img src="assets/img/school/aragon-picasso.jpg" alt="Aragon-Picasso" title="Click to view in maps" onclick="window.open('https://maps.app.goo.gl/tJhw45VWwYWdszow8')">
                     <h2>Lycée Aragon-Picasso</h2>
                     <p data-lang="schoolDateAragonPicasso">Septembre 2019 - Juin 2022</p>
@@ -273,7 +273,7 @@
                         <span class="pins" id="pinsRISC">Réseaux informatique et Système Communiquant</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card school-item">
                     <img src="assets/img/school/ella-fitzgerald.jpg" alt="Ella-Fitzgerald" title="Click to view in maps" onclick="window.open('https://maps.app.goo.gl/kxGwjuxUJLLzfpko6')">
                     <h2>Lycée Ella-Fitzgerald</h2>
                     <p data-lang="schoolDateEllaFitzgerald">Septembre 2022 - Juillet 2024</p>
@@ -283,6 +283,10 @@
                         <span class="pins" id="pinsSLAM">Solution Logiciel et Application Métier</span>
                     </p>
                 </div>
+            </div>
+            <div class="contain" style="background: white; height: 5px; width: 90%; margin-top: 100px;">
+                <div style="background: none; padding: 0 5px; margin: 0 10px;" class="card timeline-school-1"></div>
+                <div style="background: none; padding: 0 5px; margin: 0 10px;" class="card timeline-school-2"></div>
             </div>
         </section>
 
@@ -321,36 +325,6 @@
             </div>
         </section>
 
-        <!-- Work -->
-        <section class="section" id="work-sect">
-            <h2 data-lang="titleMyWorks">My works</h2>
-            <div class="contain">
-                <div onclick="window.open('https://bs-scripts.fr')" class="card">
-                    <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
-                    <h2>BS - Scripts</h2>
-                    <p>https://bs-scripts.fr</p>
-                </div>
-                <div onclick="window.open('https://project.blms.fr/exper/bs-fm/')" class="card">
-                    <img src="assets/img/work/bs-fm.png" alt="BS - FM">
-                    <h2>BS FM</h2>
-                    <p>https://project.blms.fr/exper/bs-fm/</p>
-                </div>
-                <div class="card">
-                    <img src="assets/img/work/blms-music.png" alt="BLMS Music">
-                    <h2>BLMS Music</h2>
-                    <p><i>Under developpment</i></p>
-                </div>
-                <div onclick="window.open('https://project.blms.fr/pm/')" class="card">
-                    <img src="assets/img/work/post-memory.png" alt="Post Memory">
-                    <h2>Post Memory</h2>
-                    <p>https://project.blms.fr/pm/</p>
-                    <h5><i>Under developpment</i></h5>
-                </div>
-            </div>
-            <br>
-            <button data-lang="btnGoToAllMyWorks" onclick="window.open('https://project.blms.fr/exper/')">Check all my public works</button>
-        </section>
-
         <!-- Experience -->
         <section class="section" id="exp-sect">
             <h2 data-lang="titleMyExperience">My experiences</h2>
@@ -368,6 +342,50 @@
                     <p data-lang="myExp-MaSauvegarde2-detail">Intership + CDD</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Work -->
+        <section class="section" id="work-sect">
+            <h2 data-lang="titleMyWorks">My works</h2>
+            <div class="contain">
+                <div onclick="window.open('https://project.blms.fr/exper/multiburo/')" class="card">
+                    <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
+                    <h2>Multiburo</h2>
+                    <p>https://multiburo.com/</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/work/bs-fm.png" alt="BS - FM">
+                    <h2>La Gourmetise</h2>
+                    <p>https://gourmetise.com/</p>
+                    <h5><i>Under developpment</i></h5>
+                </div>
+            </div>
+            <div class="contain">
+                <div onclick="window.open('https://bs-scripts.fr')" class="card">
+                    <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
+                    <h2>BS - Scripts</h2>
+                    <p>https://bs-scripts.fr</p>
+                </div>
+                <div onclick="window.open('https://project.blms.fr/exper/bs-fm/')" class="card">
+                    <img src="assets/img/work/bs-fm.png" alt="BS - FM">
+                    <h2>BS FM</h2>
+                    <p>https://project.blms.fr/exper/bs-fm/</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/work/blms-music.png" alt="BLMS Music">
+                    <h2>BLMS Music</h2>
+                    <p>https://music.blms.fr/</p>
+                    <h5><i>Under developpment</i></h5>
+                </div>
+                <div onclick="window.open('https://project.blms.fr/pm/')" class="card">
+                    <img src="assets/img/work/post-memory.png" alt="Post Memory">
+                    <h2>Post Memory</h2>
+                    <p>https://project.blms.fr/pm/</p>
+                    <h5><i>Under developpment</i></h5>
+                </div>
+            </div>
+            <br>
+            <button data-lang="btnGoToAllMyWorks" onclick="window.open('https://project.blms.fr/exper/')">Check all my public works</button>
         </section>
 
         <!-- Contact -->
@@ -412,68 +430,45 @@
                 <div class="css-slider">
                     <input id="whoAmI-slide-1" type="radio" name="whoAmI-slides" checked style="display: none;">
                     <section class="slide slide-one">
-                        <h1>Qui suis-je ?</h1>
+                        <h1 data-lang="titleAboutMe">About me</h1>
                         <hr style="margin: 10px 45%;">
-                        <p style="font-style: italic;">Sérézin-du-Rhône, 69, France</p>
+                        <p data-lang="aboutMeDesc" style="font-style: italic;">Somes informations to learn about me</p>
                         <hr>
-                        <p data-lang="myExp-whoAmI-descCompany" style="text-align: left;">
-                            Editeur de solutions de sauvegarde externalisée s'adressant aux <b>éditeurs de logiciel</b>, <b>prestataires informatique</b>, ou <b>services informatique interne</b>.<br>
-                            Certifié <b>ISO 27001</b> et <b>HDS</b>.
-                        </p>
-                        <br><br>
-                        <p data-lang="myExp-whoAmI-period" style="text-align: left;">
-                            <b>Période de stage :</b> 09 Mai 2023 - 30 Juin 2023<br>
-                            <b>Période de CDD :</b> 04 Juillet 2023 - 25 Août 2023
-                        </p>
+                        <div class="container-row">
+                            <div class="row">
+                                <div id="btn-frenchDev">
+                                    <img src="assets/img/dev_fr.png" alt="Image Dev FR">
+                                </div>
+                                <div id="btn-myAge" data-lang="modalWhoAmIAge">
+                                    <b class="setMyAge">19</b> years old
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="btn-sdmis">
+                                    <img src="assets/img/sdmis.png" alt="Image SDMIS">
+                                </div>
+                                <div id="btn-blms">
+                                    <img src="https://asset.blms.fr/logo/logo2_dark.png" alt="Image Bloom's Studio">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p id="info-frenchDev" data-lang="modalWhoAmI-info-frenchDev">I am a french developper based on fullstack.</p>
+                            <p id="info-myAge" data-lang="modalWhoAmI-info-myAge">I am <b class="setMyAge">19</b> years old.</p>
+                            <p id="info-sdmis" data-lang="modalWhoAmI-info-sdmis">Also, I am volunteer as a firefighter in fire department of my city.</p>
+                            <p id="info-blms" data-lang="modalWhoAmI-info-blms">I am the owner of a small "organization", Bloom's Studio, where I work for small business of personal projects with a friend.</p>
+                        </div>
                         <nav>
                             <!-- <label for="slide-3" class="prev">&#10094;</label> -->
-                            <label for="whoAmI-slide-2" class="next">&#10095;</label>
-                        </nav>
-                    </section>
-                    
-                    <input id="whoAmI-slide-2" type="radio" name="whoAmI-slides" style="display: none;">
-                    <section class="slide slide-two">
-                        <h1 data-lang="myExp-whoAmI-titleTheCompany" style="font-size: 150%;">L'entreprise</h1>
-                        <img style="margin-top: 20px; border-radius: 0.5rem;" src="assets/img/work/timeline-MS.png" alt="Timeline Ma-Sauvegarde">
-                        <nav>
-                            <label for="whoAmI-slide-1" class="prev">&#10094;</label>
-                            <label for="whoAmI-slide-3" class="next">&#10095;</label>
-                        </nav>
-                    </section>
-                    
-                    <input id="whoAmI-slide-3" type="radio" name="whoAmI-slides" style="display: none;">
-                    <section class="slide slide-three">
-                        <h1 data-lang="myExp-whoAmI-titleMyTasks" style="font-size: 160%;">Mes tâches</h1>
-                        <h2 data-lang="myExp-whoAmI-subtitleDocLina">Documentation Lina</h2>
-                        <div style="margin-top: 50px; display: flex; justify-content: space-between; flex-direction: row; padding: 0 120px;">
-                            <img src="assets/img/work/logo_lina.jpg" style="width: 20%; height: 20%;" alt="Logo Symfony">
-                            <img src="assets/img/work/dash_lina.webp" style="width: 800px;" alt="">
-                        </div>
-                        <nav>
-                            <label for="whoAmI-slide-2" class="prev">&#10094;</label>
-                            <label for="whoAmI-slide-4" class="next">&#10095;</label>
-                        </nav>
-                    </section>
-                    
-                    <input id="whoAmI-slide-4" type="radio" name="whoAmI-slides" style="display: none;">
-                    <section class="slide slide-four">
-                        <h1 data-lang="myExp-whoAmI-titleMyTasks2" style="font-size: 160%;">Mes tâches</h1>
-                        <h2>API Symfony</h2>
-                        <div style="margin-top: 50px; display: flex; justify-content: space-between; flex-direction: row; padding: 0 120px;">
-                            <img src="assets/img/work/logo_symfony.png" style="width: 30%; height: 30%;" alt="Logo Symfony">
-                            <img src="assets/img/work/extranet_banner.webp" style="width: 800px;" alt="">
-                        </div>
-                        <nav>
-                            <label for="whoAmI-slide-3" class="prev">&#10094;</label>
-                            <!-- <label for="slide-1" class="next">&#10095;</label> -->
+                            <!-- <label for="whoAmI-slide-2" class="next">&#10095;</label> -->
                         </nav>
                     </section>
                     
                     <div class="kartoshka">
-                        <label for="whoAmI-slide-1" id="whoAmI-slide-1"></label>
+                        <!-- <label for="whoAmI-slide-1" id="whoAmI-slide-1"></label>
                         <label for="whoAmI-slide-2" id="whoAmI-slide-2"></label>
                         <label for="whoAmI-slide-3" id="whoAmI-slide-3"></label>
-                        <label for="whoAmI-slide-4" id="whoAmI-slide-4"></label>
+                        <label for="whoAmI-slide-4" id="whoAmI-slide-4"></label> -->
                     </div>
                 </div>
             </section>
@@ -621,10 +616,6 @@
                         <h2 data-lang="myExp-MaSauv2-subtitleInfra">L'infrastructure</h2>
                         <div style="height: calc(100% - 250px); margin-top: 50px; display: flex; justify-content: space-evenly; flex-direction: row; padding: 0 120px;">
                             <img src="assets/img/work/maSauv2-infra.png" style="height: 100%;" alt="Logo Symfony">
-                            <div>
-                                <img src="assets/img/work/maSauv2-dbExt.png" style="height: 100%;" alt="DB Ext">
-                                <img src="assets/img/work/maSauv2-dbJwt.png" style="height: 100%;" alt="DB Jwt">
-                            </div>
                         </div>
                         <nav>
                             <label for="maSauv2-slide-4" class="prev">&#10094;</label>
@@ -665,21 +656,7 @@
                         <img src="assets/img/work/maSauv2-branchSystem.png" style="width: calc(100% - 250px); margin-top: 50px;" alt="Logo Symfony">
                         <nav>
                             <label for="maSauv2-slide-7" class="prev">&#10094;</label>
-                            <label for="maSauv2-slide-9" class="next">&#10095;</label>
-                        </nav>
-                    </section>
-                    
-                    <input id="maSauv2-slide-9" type="radio" name="maSauv2-slides" style="display: none;">
-                    <section class="slide slide-four">
-                        <h1 style="font-size: 160%;">API Symfony</h1>
-                        <h2 data-lang="myExp-MaSauv2-oneOfMyManyProjects">Un de mes nombreux projets</h2>
-                        <div style="height: calc(100% - 260px); margin-top: 50px; display: flex; justify-content: space-evenly; align-items: center; flex-direction: row; padding: 0 120px;">
-                            <img onclick="window.open('assets/img/work/maSauv2-projectThatIWorkedOn.html')" src="assets/img/work/maSauv2-projectThatIWorkedOn.png" style="width: calc(100% - 250px); margin-top: 50px; cursor: pointer;" alt="Logo Symfony">
-                            <button style="font-size: 200%;" onclick="window.open('assets/img/work/maSauv2-projectThatIWorkedOn.html')">Code</button>
-                        </div>
-                        <nav>
-                            <label for="maSauv2-slide-8" class="prev">&#10094;</label>
-                            <!-- <label for="maSauv2-slide-10" class="next">&#10095;</label> -->
+                            <!-- <label for="maSauv2-slide-9" class="next">&#10095;</label> -->
                         </nav>
                     </section>
                     
@@ -692,7 +669,6 @@
                         <label for="maSauv2-slide-6" id="maSauv2-slide-6"></label>
                         <label for="maSauv2-slide-7" id="maSauv2-slide-7"></label>
                         <label for="maSauv2-slide-8" id="maSauv2-slide-7"></label>
-                        <label for="maSauv2-slide-9" id="maSauv2-slide-7"></label>
                     </div>
                 </div>
             </section>

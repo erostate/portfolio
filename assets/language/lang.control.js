@@ -1,4 +1,4 @@
-import language from './lang.data.json' assert { type: "json" };
+import language from './lang.data.json' with { type: "json" };
 
 // Change the language of elements on the page
 function displayLang() {
