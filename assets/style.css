@@ -294,6 +294,14 @@ menu ul li img {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    font-size: 80%;
+    margin: -10px 0;
+    border-top: solid 2px #00233B;
+}
+#container #skills-sect .contain:first-child,
+#container #skills2-sect .contain:first-child,
+#container #softskills-sect .contain:first-child {
+    border-top: none;
 }
 #container #skills-sect .contain .card,
 #container #skills2-sect .contain .card,
@@ -301,11 +309,53 @@ menu ul li img {
     border-radius: 0.3rem;
     width: 200px;
     height: 100%;
-    margin: 5px 10px;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width: 1230px) {
+    #container #skills-sect .contain .card,
+    #container #skills2-sect .contain .card,
+    #container #softskills-sect .contain .card {
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 1170px) {
+    #container #skills-sect .contain .card,
+    #container #skills2-sect .contain .card,
+    #container #softskills-sect .contain .card {
+        margin: 0 0;
+    }
+}
+@media screen and (max-width: 1115px) {
+    #container #skills-sect .contain .card,
+    #container #skills2-sect .contain .card,
+    #container #softskills-sect .contain .card {
+        margin: 0 -10px;
+    }
+}
+@media screen and (max-width: 1010px) {
+    #container #skills-sect .contain .card,
+    #container #skills2-sect .contain .card,
+    #container #softskills-sect .contain .card {
+        margin: 0 -15px;
+    }
+}
+@media screen and (max-width: 965px) {
+    #container #skills-sect .contain .card,
+    #container #skills2-sect .contain .card,
+    #container #softskills-sect .contain .card {
+        margin: 0 -25px;
+    }
+}
+@media screen and (max-width: 865px) {
+    #container #skills-sect .contain .card,
+    #container #skills2-sect .contain .card,
+    #container #softskills-sect .contain .card {
+        margin: 0 -35px;
+    }
 }
 #container #skills-sect .contain .card img,
 #container #skills2-sect .contain .card img,
@@ -315,12 +365,12 @@ menu ul li img {
 #container #skills-sect .contain .card:has(h2) img,
 #container #skills2-sect .contain .card:has(h2) img,
 #container #softskills-sect .contain .card:has(h2) img {
-    height: 70%;
+    height: 50%;
 }
 #container #skills-sect .contain .card .yeet,
 #container #skills2-sect .contain .card .yeet,
 #container #softskills-sect .contain .card .yeet {
-    font-size: 100px;
+    font-size: 80px;
 }
 #container #skills-sect .contain .card h2,
 #container #skills2-sect .contain .card h2,
@@ -741,7 +791,8 @@ label {
     transition: left 0s 0.35s;
 }
 [id^="maSauv1-slide"]:checked + .slide,
-[id^="maSauv2-slide"]:checked + .slide {
+[id^="maSauv2-slide"]:checked + .slide,
+[id^="whoAmI-slide"]:checked + .slide {
     left: 0;
     z-index: 100;
     background-color: #00233B;
