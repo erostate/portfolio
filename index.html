@@ -27,6 +27,7 @@
             <li onclick="moveSect('cont-studies');" class="menuIcon"><i class="fa-solid fa-graduation-cap"></i></li>
             <li onclick="moveSect('exp');" class="menuIcon"><i class="fa-solid fa-flask"></i></li>
             <li onclick="moveSect('work');" class="menuIcon"><i class="fa-solid fa-briefcase"></i></li>
+            <li onclick="moveSect('tech-watch');" class="menuIcon"><i class="fa-solid fa-microchip"></i></li>
             <li onclick="moveSect('contact');" class="menuIcon"><i class="fa-solid fa-address-book"></i></li>
             <li onclick="openLangPanel();" id="noot" class="sel-language">
                 <img id="currentLanguage" src="https://asset.blms.fr/picture/flag/en.png" alt="Flag En">
@@ -349,12 +350,12 @@
             <h2 data-lang="titleMyWorks">My works</h2>
             <div class="contain">
                 <div onclick="window.open('https://project.blms.fr/exper/multiburo/')" class="card">
-                    <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
+                    <img src="assets/img/work/multiburo.png" alt="BS - Scripts">
                     <h2>Multiburo</h2>
                     <p>https://multiburo.com/</p>
                 </div>
                 <div class="card">
-                    <img src="assets/img/work/bs-fm.png" alt="BS - FM">
+                    <img src="assets/img/work/la-gourmetise.png" alt="BS - FM">
                     <h2>La Gourmetise</h2>
                     <p>https://gourmetise.com/</p>
                     <h5><i>Under developpment</i></h5>
@@ -365,11 +366,6 @@
                     <img src="assets/img/work/bs-scripts.png" alt="BS - Scripts">
                     <h2>BS - Scripts</h2>
                     <p>https://bs-scripts.fr</p>
-                </div>
-                <div onclick="window.open('https://project.blms.fr/exper/bs-fm/')" class="card">
-                    <img src="assets/img/work/bs-fm.png" alt="BS - FM">
-                    <h2>BS FM</h2>
-                    <p>https://project.blms.fr/exper/bs-fm/</p>
                 </div>
                 <div class="card">
                     <img src="assets/img/work/blms-music.png" alt="BLMS Music">
@@ -386,6 +382,21 @@
             </div>
             <br>
             <button data-lang="btnGoToAllMyWorks" onclick="window.open('https://project.blms.fr/exper/')">Check all my public works</button>
+        </section>
+
+        <!-- Veille technologique -->
+        <section class="section" id="tech-watch-sect">
+            <h2>Technology watch</h2>
+            <button onclick="openModal('tech-watch-modal')">See my technology watch topic</button>
+            <hr>
+            <div class="contain">
+                <div class="card">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+            </div>
         </section>
 
         <!-- Contact -->
@@ -457,6 +468,38 @@
                             <p id="info-myAge" data-lang="modalWhoAmI-info-myAge">I am <b class="setMyAge">19</b> years old.</p>
                             <p id="info-sdmis" data-lang="modalWhoAmI-info-sdmis">Also, I am volunteer as a firefighter in fire department of my city.</p>
                             <p id="info-blms" data-lang="modalWhoAmI-info-blms">I am the owner of a small "organization", Bloom's Studio, where I work for small business of personal projects with a friend.</p>
+                        </div>
+                        <nav>
+                            <!-- <label for="slide-3" class="prev">&#10094;</label> -->
+                            <!-- <label for="whoAmI-slide-2" class="next">&#10095;</label> -->
+                        </nav>
+                    </section>
+                    
+                    <div class="kartoshka">
+                        <!-- <label for="whoAmI-slide-1" id="whoAmI-slide-1"></label>
+                        <label for="whoAmI-slide-2" id="whoAmI-slide-2"></label>
+                        <label for="whoAmI-slide-3" id="whoAmI-slide-3"></label>
+                        <label for="whoAmI-slide-4" id="whoAmI-slide-4"></label> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Technology topic MODAL -->
+        <div id="tech-watch-modal" class="modal" style="display: none;">
+            <p class="invite-to-close-modal">Click here to close modal</p>
+            <section class="modal-content">
+                <div class="css-slider">
+                    <input id="techWatch-slide-1" type="radio" name="techWatch-slides" checked style="display: none;">
+                    <section class="slide slide-one">
+                        <h1>My technology watch topic</h1>
+                        <hr style="margin: 10px 45%;">
+                        <p style="font-style: italic;">Somes informations to learn about me</p>
+                        <hr>
+                        <div class="container-row">
+                            <h1>
+                                How the army uses digital tools to help them in their missions
+                            </h1>
                         </div>
                         <nav>
                             <!-- <label for="slide-3" class="prev">&#10094;</label> -->

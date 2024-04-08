@@ -136,7 +136,7 @@ function setMyAge() {
 }
 setMyAge();
 
-function openModal(modalName, type) {
+function openModal(modalName, type = 'block') {
     document.getElementById(modalName).style.display = type;
 }
 // Close the modal
