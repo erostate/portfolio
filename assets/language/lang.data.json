@@ -155,6 +155,50 @@
         "fr": "Stage en tant que développeur backend",
         "en": "Intership as a backend web developer"
     },
+    "titleTechWatch": {
+        "fr": "Veille technologique",
+        "en": "Technology watch"
+    },
+    "btnSeeTechWatchTopic": {
+        "fr": "Voir mon sujet de veille technologique",
+        "en": "See my technology watch topic"
+    },
+    "titleMyTechWatchTopic": {
+        "fr": "Mon sujet de veille technologique",
+        "en": "My technology watch topic"
+    },
+    "questMyTechWatchTopic": {
+        "fr": "Comment l'armée utilise les outils numériques pour les aider dans leurs missions ?",
+        "en": "How the army uses digital tools to help them in their missions?"
+    },
+    "descSicsTechWatchTopic": {
+        "fr": "Système d'Information du Combat Scorpion (SICS)",
+        "en": "Scorpion Combat Information System (SCIS)"
+    },
+    "desc2SicsTechWatchTopic": {
+        "fr": "Nouveaux véhicules opérationnels",
+        "en": "New operational vehicles"
+    },
+    "protectUsTechWatchTopic": {
+        "fr": "Se protéger lors d'un conflit",
+        "en": "Protect us during a conflict"
+    },
+    "protectUs2TechWatchTopic": {
+        "fr": "Se protéger & contre-attaquer lors d'un conflit",
+        "en": "Protect us & counterattack during a conflict"
+    },
+    "descGriffonTechWatch": {
+        "fr": "Prend en charge le système SICS, est équipé de dispositif d'armement permettant de se défendre sans avoir besoin de sortir du véhicule.",
+        "en": "Support the SCIS system, is equipped with weapon system allowing to defend without having to leave the vehicle."
+    },
+    "descJaguarTechWatch": {
+        "fr": "Prend en charge le système SICS, est équipé de dispositif d'armement permettant de se défendre sans avoir besoin de sortir du véhicule.",
+        "en": "Support the SCIS system, is equipped with weapon system allowing to defend without having to leave the vehicle."
+    },
+    "descServalTechWatch": {
+        "fr": "Prend en charge le système SICS, est équipé de dispositif d'armement permettant de se défendre sans avoir besoin de sortir du véhicule.",
+        "en": "Support the SCIS system, is equipped with weapon system allowing to defend without having to leave the vehicle."
+    },
     "contactMe": {
         "fr": "Me contacter",
         "en": "Contact me"

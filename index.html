@@ -386,9 +386,9 @@
 
         <!-- Veille technologique -->
         <section class="section" id="tech-watch-sect">
-            <h2>Technology watch</h2>
-            <button onclick="openModal('tech-watch-modal')">See my technology watch topic</button>
-            <hr>
+            <h2 data-lang="titleTechWatch">Technology watch</h2>
+            <button data-lang="btnSeeTechWatchTopic" onclick="openModal('tech-watch-modal')">See my technology watch topic</button>
+            <br><hr><br>
             <div class="contain">
                 <div class="card">
                     <i class="fa-brands fa-youtube"></i>
@@ -492,26 +492,91 @@
                 <div class="css-slider">
                     <input id="techWatch-slide-1" type="radio" name="techWatch-slides" checked style="display: none;">
                     <section class="slide slide-one">
-                        <h1>My technology watch topic</h1>
+                        <h1 data-lang="titleMyTechWatchTopic">My technology watch topic</h1>
                         <hr style="margin: 10px 45%;">
-                        <p style="font-style: italic;">Somes informations to learn about me</p>
+                        <p style="font-style: italic;"></p>
                         <hr>
                         <div class="container-row">
-                            <h1>
-                                How the army uses digital tools to help them in their missions
+                            <h1 style="font-size: 250%;" data-lang="questMyTechWatchTopic">
+                                How the army uses digital tools to help them in their missions?
                             </h1>
+                            <div class="row">
+                                <img src="assets/img/tech-watch/army1.jpg" alt="Army">
+                                <img src="assets/img/tech-watch/sics.jpg" alt="Army">
+                                <img src="assets/img/tech-watch/griffon.jpg" alt="Army">
+                            </div>
                         </div>
                         <nav>
                             <!-- <label for="slide-3" class="prev">&#10094;</label> -->
-                            <!-- <label for="whoAmI-slide-2" class="next">&#10095;</label> -->
+                            <label for="techWatch-slide-2" class="next">&#10095;</label>
+                        </nav>
+                    </section>
+                    
+                    <input id="techWatch-slide-2" type="radio" name="techWatch-slides" style="display: none;">
+                    <section class="slide slide-two">
+                        <h1 data-lang="titleMyTechWatchTopic">My technology watch topic</h1>
+                        <hr style="margin: 10px 45%;">
+                        <h3 data-lang="descSicsTechWatchTopic">Système d'Information du Combat Scorpion (SICS)</h3>
+                        <hr>
+                        <div class="container-row">
+                            <h1 data-lang="protectUsTechWatchTopic">Se protéger lors d'un conflit</h1>
+                            <div class="row">
+                                <img src="assets/img/tech-watch/sics-demo-1.png" alt="Army - SICS">
+                                <img src="assets/img/tech-watch/sics-demo-2.png" alt="Army - SICS">
+                                <img src="assets/img/tech-watch/sics-demo-3.png" alt="Army - SICS">
+                                <img src="assets/img/tech-watch/sics-demo-4.png" alt="Army - SICS">
+                                <img src="assets/img/tech-watch/sics-demo-5.png" alt="Army - SICS">
+                            </div>
+                        </div>
+                        <nav>
+                            <label for="techWatch-slide-1" class="prev">&#10094;</label>
+                            <label for="techWatch-slide-3" class="next">&#10095;</label>
+                        </nav>
+                    </section>
+                    
+                    <input id="techWatch-slide-3" type="radio" name="techWatch-slides" style="display: none;">
+                    <section class="slide slide-three">
+                        <h1 data-lang="titleMyTechWatchTopic">My technology watch topic</h1>
+                        <hr style="margin: 10px 45%;">
+                        <h3 data-lang="desc2SicsTechWatchTopic">Nouveaux véhicules opérationnels</h3>
+                        <hr>
+                        <div class="container-row">
+                            <h1 data-lang="protectUs2TechWatchTopic">Se protéger & contre-attaquer lors d'un conflit</h1>
+                            <div class="row">
+                                <span class="card-info" id="btn-griffon">
+                                    <img src="assets/img/tech-watch/griffon.jpg" alt="Army - Griffon">
+                                    <p>Griffon</p>
+                                    <p class="info" data-lang="descGriffonTechWatch">
+                                        Prend en charge le système SICS, est équipé de dispositif d'armement permettant de se défendre sans avoir besoin de sortir du véhicule.
+                                    </p>
+                                </span>
+                                <span class="card-info" id="btn-jaguar">
+                                    <img src="assets/img/tech-watch/jaguar.jpg" alt="Army - Jaguar">
+                                    <p>Jaguar</p>
+                                    <p class="info" data-lang="descJaguarTechWatch">
+                                        Prend en charge le système SICS, est équipé de dispositif d'armement permettant de se défendre sans avoir besoin de sortir du véhicule.
+                                    </p>
+                                </span>
+                                <span class="card-info" id="btn-serval">
+                                    <img src="assets/img/tech-watch/serval.jpg" alt="Army - Serval">
+                                    <p>Serval</p>
+                                    <p class="info" data-lang="descServalTechWatch">
+                                        Prend en charge le système SICS, est équipé de dispositif d'armement permettant de se défendre sans avoir besoin de sortir du véhicule.
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+                        <nav>
+                            <label for="techWatch-slide-2" class="prev">&#10094;</label>
+                            <!-- <label for="techWatch-slide-4" class="next">&#10095;</label> -->
                         </nav>
                     </section>
                     
                     <div class="kartoshka">
-                        <!-- <label for="whoAmI-slide-1" id="whoAmI-slide-1"></label>
-                        <label for="whoAmI-slide-2" id="whoAmI-slide-2"></label>
-                        <label for="whoAmI-slide-3" id="whoAmI-slide-3"></label>
-                        <label for="whoAmI-slide-4" id="whoAmI-slide-4"></label> -->
+                        <label for="techWatch-slide-1" id="techWatch-slide-1"></label>
+                        <label for="techWatch-slide-2" id="techWatch-slide-2"></label>
+                        <label for="techWatch-slide-3" id="techWatch-slide-3"></label>
+                        <!-- <label for="techWatch-slide-4" id="techWatch-slide-4"></label> -->
                     </div>
                 </div>
             </section>

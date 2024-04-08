@@ -293,6 +293,38 @@ document.getElementById('btn-blms').addEventListener('mouseout', function() {
     document.getElementById('info-blms').style.display = 'none';
 });
 
+// Over the "info-techWatch" section
+document.getElementById('btn-griffon').addEventListener('mouseover', function() {
+    const card = document.getElementById('btn-griffon');
+    card.getElementsByTagName('img')[0].style.filter = 'brightness(0.3)';
+    card.getElementsByClassName('info')[0].style.display = 'flex';
+});
+document.getElementById('btn-griffon').addEventListener('mouseout', function() {
+    const card = document.getElementById('btn-griffon');
+    card.getElementsByTagName('img')[0].style.filter = 'none';
+    card.getElementsByClassName('info')[0].style.display = 'none';
+});
+document.getElementById('btn-jaguar').addEventListener('mouseover', function() {
+    const card = document.getElementById('btn-jaguar');
+    card.getElementsByTagName('img')[0].style.filter = 'brightness(0.3)';
+    card.getElementsByClassName('info')[0].style.display = 'flex';
+});
+document.getElementById('btn-jaguar').addEventListener('mouseout', function() {
+    const card = document.getElementById('btn-jaguar');
+    card.getElementsByTagName('img')[0].style.filter = 'none';
+    card.getElementsByClassName('info')[0].style.display = 'none';
+});
+document.getElementById('btn-serval').addEventListener('mouseover', function() {
+    const card = document.getElementById('btn-serval');
+    card.getElementsByTagName('img')[0].style.filter = 'brightness(0.3)';
+    card.getElementsByClassName('info')[0].style.display = 'flex';
+});
+document.getElementById('btn-serval').addEventListener('mouseout', function() {
+    const card = document.getElementById('btn-serval');
+    card.getElementsByTagName('img')[0].style.filter = 'none';
+    card.getElementsByClassName('info')[0].style.display = 'none';
+});
+
 
 // EASTER EGG
 function getRandomInt(min, max) {
