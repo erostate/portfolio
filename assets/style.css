@@ -48,11 +48,12 @@ menu {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100px;
+    width: 50px; /* normal: 100px */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.25s ease-in-out; /* normal: remove */
 }
 menu ul {
     display: flex;
@@ -94,10 +95,20 @@ menu ul li img {
     width: 40px;
 }
 
+menu:hover { /* normal: remove */
+    width: 100px;
+    transition: all 0.25s ease-in-out;
+}
+menu:hover ~ #container { /* normal: remove */
+    margin-left: 100px;
+    transition: all 0.25s ease-in-out;
+}
+
 /* CONTAINER */
 #container {
     height: 100%;
-    margin-left: 100px;
+    margin-left: 50px; /* normal: 100px */
+    transition: all 0.25s ease-in-out; /* normal: remove */
 }
 #container .section {
     background: #001626;

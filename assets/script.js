@@ -117,6 +117,83 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+window.addEventListener('keydown', (e) => {
+    if (e.key == 'ArrowUp') {
+        const uri = window.location.hash;
+        var currentPage = null;
+        var previousPage = null;
+        if (uri) {
+            // Get the current page
+            currentPage = uri.substring(1).replace('-sect', '');
+
+            // Get all page
+            const allPage = document.querySelectorAll('.menuIcon');
+            var prevItem = null;
+            allPage.forEach((page) => {
+                if (page.id == 'nav-'+currentPage) {
+                    previousPage = prevItem;
+                } else {
+                    prevItem = page;
+                }
+            });
+        } else {
+            // Get the current page
+            currentPage = document.querySelector('.menuIcon.active');
+
+            // Get the next page
+            previousPage = currentPage.previousElementSibling;
+        }
+
+        if (previousPage) {
+            // Get the previous page
+            var page = previousPage.id.replace('nav-', '');
+            // Scroll to the page
+            setTimeout(() => {
+                moveSect(page);
+            }, 200);
+            console.log('prev page: '+previousPage.id.replace('nav-', ''))
+        }
+    } else if (e.key == 'ArrowDown') {
+        const uri = window.location.hash;
+        var currentPage = null;
+        var nextPage = null;
+        if (uri) {
+            // Get the current page
+            currentPage = uri.substring(1).replace('-sect', '');
+
+            // Get all page
+            const allPage = document.querySelectorAll('.menuIcon');
+            var item = 0;
+            var nextItem = 0;
+            allPage.forEach((page) => {
+                if (page.id == 'nav-'+currentPage) {
+                    nextItem = item+1;
+                }
+                if (item == nextItem) {
+                    nextPage = page;
+                }
+                item++;
+            });
+        } else {
+            // Get the current page
+            currentPage = document.querySelector('.menuIcon.active');
+
+            // Get the next page
+            nextPage = currentPage.nextElementSibling;
+        }
+
+        if (nextPage) {
+            // Get the next page
+            var page = nextPage.id.replace('nav-', '');
+            // Scroll to the page
+            setTimeout(() => {
+                moveSect(page);
+            }, 200);
+            console.log('next page: '+nextPage.id.replace('nav-', ''))
+        }
+    }
+});
+
 function setMyAge() {
     const dateOfBirth = new Date("2004-11-10");
     const currentDate = new Date();
