@@ -48,7 +48,7 @@ menu {
     position: fixed;
     top: 0;
     left: 0;
-    width: 50px; /* normal: 100px */
+    width: 100px; /* anim: 50px */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -107,7 +107,7 @@ menu:hover ~ #container { /* normal: remove */
 /* CONTAINER */
 #container {
     height: 100%;
-    margin-left: 50px; /* normal: 100px */
+    margin-left: 100px; /* anim: 50px */
     transition: all 0.25s ease-in-out; /* normal: remove */
 }
 #container .section {
