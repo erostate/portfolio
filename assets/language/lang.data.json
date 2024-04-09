@@ -84,16 +84,16 @@
         "en": "Some of my current projects are listed in the <a href=\"#work-sect\">work section</a>.<br> I also have somes personals projects that I am currently developing, like a music platform linked to a Discord bot, or somes personals websites for a FiveM server.<br> I work for small company too, and I can wait for a new customer. All informations about that is present on my website : <a target=\"_blank\" href=\"https://blms.fr/\">Bloom's Studio</a><br> I work on a lot of projects, that you can access in this list in my website : <a href=\"https://project.blms.fr/exper/\" target=\"_blank\">Bloom's Studio - Project</a>."
     },
     "titleMySkillsSect": {
-        "fr": "Mes skills",
-        "en": "My skills"
+        "fr": "Mes hardskills",
+        "en": "My hardskills"
     },
     "mySkillsSectDesc": {
         "fr": "Je suis un developpeur fullstack, donc j'ai beaucoup de compétences dans différents languages",
         "en": "I am a fullstack developer, so I have a lot of skills in differents languages"
     },
     "titleMySoftSkillsSect": {
-        "fr": "Mes soft skills",
-        "en": "My soft skills"
+        "fr": "Mes softskills",
+        "en": "My softskills"
     },
     "mySoftSkillsSectDesc": {
         "fr": "J'ai beaucoup de softskills, que j'utilise dans mon travail",
